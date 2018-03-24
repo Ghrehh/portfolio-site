@@ -1,0 +1,16 @@
+:root {
+  --charcoal: #1f1f1f;
+
+  --header-font: 'Abril Fatface', cursive;
+  --main-font: 'PT Sans', sans-serif;
+}
+
+body {
+  background: linear-gradient(to bottom right, #814ca1, #e27d42);
+  min-height: 100vh
+}
+
+h1, h2, h3, h4, h5, p, a, ul, ol, li, span {
+  font-family: var(--main-font);
+  color: var(--charcoal);
+}

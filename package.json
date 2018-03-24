@@ -5,12 +5,24 @@
   "dependencies": {
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "react-scripts": "1.1.1"
+    "react-scripts-cssmodules": "^1.1.10",
+    "reset-css": "^3.0.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "start": "NODE_PATH=./src react-scripts start",
+    "build": "NODE_PATH=./src react-scripts build",
+    "test": "NODE_PATH=./src react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "lint": "NODE_PATH=./src eslint src --ignore-pattern \"**/__snapshots__/**\""
+  },
+  "devDependencies": {
+    "eslint": "^4.15.0",
+    "eslint-config-react-app": "^2.0.1",
+    "eslint-plugin-flowtype": "^2.41.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-prettier": "^2.4.0",
+    "eslint-plugin-react": "^7.5.1",
+    "prettier": "^1.10.2"
   }
 }

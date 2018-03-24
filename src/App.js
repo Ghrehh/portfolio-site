@@ -1,19 +1,17 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
 
-class App extends Component {
+import data from './data';
+import Projects from 'components/Projects';
+
+import styles from 'App.module.css';
+
+class App extends React.Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+      <main>
+        <h1 className={styles.header}>Hey, I'm Gerard Burns a web developer from Belfast.</h1>
+        <Projects projects={data.projects} />
+      </main>
     );
   }
 }
