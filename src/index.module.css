@@ -1,13 +1,14 @@
 :root {
-  --charcoal: #1f1f1f;
+  --charcoal: #454545;
+  --purple: #6b5777;
 
   --header-font: 'Abril Fatface', cursive;
   --main-font: 'PT Sans', sans-serif;
 }
 
 body {
-  background: linear-gradient(to bottom right, #814ca1, #e27d42);
-  min-height: 100vh
+  min-height: 100vh;
+  background: linear-gradient(to right, transparent, #d9d9d945);
 }
 
 h1, h2, h3, h4, h5, p, a, ul, ol, li, span {

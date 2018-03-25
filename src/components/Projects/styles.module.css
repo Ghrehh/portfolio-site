@@ -1,6 +1,35 @@
 .projects {
 }
 
+.header {
+  font-size: 40px;
+  font-weight: 800;
+  text-align: center;
+  padding: 45px 0 40px;
+}
+
+.headerUnderline {
+  width: 100%;
+  content: '';
+  bottom: 3px;
+  height: 3px;
+  background: linear-gradient(to right, transparent, #6b5777);
+}
+
+.project {
+  cursor: pointer;
+  background-color: var(--purple);
+  padding: 100px 15px;
+  text-align: center;
+}
+
 .name {
-  font-size: 30px;
+  color: white;
+  font-size: 55px;
+  margin-bottom: 15px;
+}
+
+.description {
+  color: white;
+  font-size: 14px;
 }
