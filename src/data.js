@@ -8,17 +8,20 @@ export default {
     },
     {
       name: 'TWEETATLAS SERVER',
-      description: 'Service used to estimate the location of users creating tweets container a search phrase',
+      description:
+        'Service used to estimate the location of users creating tweets container a search phrase',
       backgroundColor: '#f5bb24'
     },
     {
       name: 'NSTS METRONOME',
-      description: 'A sleek web metronome capable of playing in non-standard time signatures.',
+      description:
+        'A sleek web metronome capable of playing in non-standard time signatures.',
       backgroundColor: '#6b5777'
     },
     {
       name: 'EAR TRAINING',
-      description: 'A web app for musicians to train their aural perception skills.',
+      description:
+        'A web app for musicians to train their aural perception skills.',
       backgroundColor: '#C44B33'
     },
     {

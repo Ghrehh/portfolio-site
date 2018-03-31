@@ -21,9 +21,7 @@ class Projects extends React.Component {
     return (
       <article>
         <header>
-          <h2 className={styles.header}>
-            PROJECTS
-          </h2>
+          <h2 className={styles.header}>PROJECTS</h2>
         </header>
 
         {this.renderProjects()}
@@ -34,6 +32,6 @@ class Projects extends React.Component {
 
 Projects.propTypes = {
   projects: PropTypes.array.isRequired
-}
+};
 
 export default Projects;

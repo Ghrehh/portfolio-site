@@ -8,15 +8,11 @@ class Page extends React.Component {
     return (
       <article>
         <header>
-          <h2 className={styles.header}>
-            PROJECTS
-          </h2>
+          <h2 className={styles.header}>PROJECTS</h2>
           <div className={styles.headerUnderline} />
         </header>
 
-        <div className={styles.projects}>
-          {this.renderPage()}
-        </div>
+        <div className={styles.projects}>{this.renderPage()}</div>
       </article>
     );
   }
@@ -24,7 +20,6 @@ class Page extends React.Component {
 
 Page.propTypes = {
   projects: PropTypes.array.isRequired
-}
+};
 
 export default Page;
-
