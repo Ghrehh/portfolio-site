@@ -2,13 +2,14 @@
   --charcoal: #454545;
   --purple: #6b5777;
 
-  --header-font: 'Abril Fatface', cursive;
+  --header-font: 'Bitter', cursive;
   --main-font: 'PT Sans', sans-serif;
+
+  --mobile-media-query: 530px;
 }
 
 body {
   min-height: 100vh;
-  background: linear-gradient(to right, transparent, #d9d9d945);
 }
 
 h1, h2, h3, h4, h5, p, a, ul, ol, li, span {

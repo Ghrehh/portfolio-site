@@ -11,13 +11,13 @@ class Header extends React.Component {
           <nav className={styles.navigation}>
             <ul>
               <li>
+                <a>about</a>
+              </li>
+              <li>
                 <a>work</a>
               </li>
               <li>
                 <a>github</a>
-              </li>
-              <li>
-                <a>about</a>
               </li>
             </ul>
           </nav>

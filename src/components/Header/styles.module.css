@@ -2,6 +2,7 @@
   position: sticky;
   top: 0;
   background-color: white;
+  z-index: 123456
 }
 
 .headerInner {
@@ -20,8 +21,8 @@
 
 .title {
   font-size: 40px;
-  font-family: var(--header-font);
-  padding: 5px 10px;
+  font-family: var(--main-font);
+  padding: 5px 15px;
   display: inline-block;
   background-color: var(--purple);
   color: white;

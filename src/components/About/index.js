@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 
 import styles from './styles.module.css';
 
-class Projects extends React.Component {
-  renderProjects() {
+class About extends React.Component {
+  renderAbout() {
     return this.props.projects.map((project, index) => (
       <section
         className={styles.project}
@@ -24,16 +24,19 @@ class Projects extends React.Component {
           <h2 className={styles.header}>
             PROJECTS
           </h2>
+          <div className={styles.headerUnderline} />
         </header>
 
-        {this.renderProjects()}
+        <div className={styles.projects}>
+          {this.renderAbout()}
+        </div>
       </article>
     );
   }
 }
 
-Projects.propTypes = {
+About.propTypes = {
   projects: PropTypes.array.isRequired
 }
 
-export default Projects;
+export default About;
