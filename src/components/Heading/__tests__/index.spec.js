@@ -5,11 +5,7 @@ import Heading from '../';
 
 describe('Heading', () => {
   let testContext = {};
-  let component = (
-    <Heading className='foo'>
-      FooBarBaz
-    </Heading>
-  )
+  let component = <Heading className="foo">FooBarBaz</Heading>;
 
   beforeEach(() => {
     testContext.renderer = new ShallowRenderer();

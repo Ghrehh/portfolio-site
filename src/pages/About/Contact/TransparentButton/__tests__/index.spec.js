@@ -1,11 +1,13 @@
 import React from 'react';
 import ShallowRenderer from 'react-test-renderer/shallow';
 
-import SubHeading from '../';
+import TransparentButton from '../';
 
-describe('SubHeading', () => {
+describe('TransparentButton', () => {
   let testContext = {};
-  let component = <SubHeading className="foo">FooBarBaz</SubHeading>;
+  let component = (
+    <TransparentButton className="foo">FooBarBaz</TransparentButton>
+  );
 
   beforeEach(() => {
     testContext.renderer = new ShallowRenderer();
