@@ -1,14 +1,15 @@
 import React from 'react';
 import ShallowRenderer from 'react-test-renderer/shallow';
 
-import About from '../';
+import Page from '../';
 
-describe('About', () => {
+describe('Page', () => {
   let testContext = {}
+  const children = <p>foo</p>
 
   beforeEach(() => {
     testContext.renderer = new ShallowRenderer();
-    testContext.renderer.render(<About />);
+    testContext.renderer.render(<Page>{children}</Page>);
     testContext.result = testContext.renderer.getRenderOutput();
   });
 

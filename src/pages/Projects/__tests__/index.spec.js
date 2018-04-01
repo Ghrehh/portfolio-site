@@ -1,14 +1,17 @@
 import React from 'react';
 import ShallowRenderer from 'react-test-renderer/shallow';
 
-import About from '../';
+import Projects from '../';
 
-describe('About', () => {
+describe('Projects', () => {
   let testContext = {}
+  const projects = [
+    { name: 'foo', description: 'bar', backgroundColor: 'red'}
+  ]
 
   beforeEach(() => {
     testContext.renderer = new ShallowRenderer();
-    testContext.renderer.render(<About />);
+    testContext.renderer.render(<Projects projects={projects}/>);
     testContext.result = testContext.renderer.getRenderOutput();
   });
 

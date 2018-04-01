@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Portfolio renders the component correctly 1`] = `
+<section
+  className="display"
+>
+  <div
+    className="displayInner"
+  >
+    <h1
+      className="header"
+    >
+      PORTFOLIO
+    </h1>
+    <p
+      className="body"
+    >
+      I open-source most of my personal projects on GitHub. Why not check them out?
+    </p>
+    <button
+      className="button"
+    >
+      View Portfolio
+    </button>
+  </div>
+</section>
+`;

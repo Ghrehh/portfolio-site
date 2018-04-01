@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import * as oneOrManyElementsModel from 'models/one-or-many-elements.js';
 
@@ -10,8 +9,7 @@ const Page = ({ children }) => (
 );
 
 Page.propTypes = {
-  projects: PropTypes.array.isRequired,
-  children: oneOrManyElementsModel.PropTypes
+  children: oneOrManyElementsModel.PropTypes.isRequired
 };
 
 export default Page;
