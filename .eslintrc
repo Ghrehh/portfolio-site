@@ -6,9 +6,7 @@
   "rules": {
     "prettier/prettier": [
       "error",
-      {
-        "singleQuote": true
-      }
+      { "singleQuote": true }
      ],
      "react/prop-types": "error"
   }

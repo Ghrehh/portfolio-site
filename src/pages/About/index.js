@@ -1,7 +1,9 @@
 import React from 'react';
+import FontAwesomeIcon from '@fortawesome/react-fontawesome'
+import faCoffee from '@fortawesome/fontawesome-free-solid/faCoffee'
 
 import Page from 'components/Page';
-import Display from './Display';
+import Portfolio from './Portfolio';
 
 import styles from './styles.module.css';
 
@@ -19,10 +21,11 @@ class About extends React.Component {
         </header>
 
         <main>
-          <Display />
+          <Portfolio />
 
           <section>
             <h1 className={styles.contactTitle}>CONTACT</h1>
+            <FontAwesomeIcon icon={faCoffee} />
           </section>
         </main>
       </article>
