@@ -3,9 +3,23 @@
 exports[`Contact renders the component correctly 1`] = `
 <section>
   <Heading
-    className="contactTitle"
+    className="heading"
   >
     CONTACT
   </Heading>
+  <div
+    className="buttonContainer"
+  >
+    <Button
+      className="button twitterButton"
+    >
+      Twitter
+    </Button>
+    <Button
+      className="button emailButton"
+    >
+      Email
+    </Button>
+  </div>
 </section>
 `;

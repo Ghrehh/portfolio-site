@@ -1,3 +1,31 @@
-.contactTitle {
+.heading {
   color: var(--green);
+  margin-bottom: 40px;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  width: 150px;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.button:last-child {
+  margin-right: 0;
+}
+
+.gitHubButton {
+  background-color: var(--green);
+}
+
+.twitterButton {
+  background-color: var(--blue);
+}
+
+.emailButton {
+  background-color: var(--red);
 }

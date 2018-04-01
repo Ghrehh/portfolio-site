@@ -17,11 +17,16 @@ exports[`Portfolio renders the component correctly 1`] = `
     >
       I open-source most of my personal projects on GitHub. Why not check them out?
     </p>
-    <button
-      className="button"
+    <Button
+      className="portfolioButton"
     >
       View Portfolio
-    </button>
+    </Button>
+    <Button
+      className="gitHubButton"
+    >
+      GitHub
+    </Button>
   </div>
 </section>
 `;

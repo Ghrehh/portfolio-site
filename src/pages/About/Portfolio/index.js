@@ -1,4 +1,6 @@
 import React from 'react';
+
+import Button from 'components/Button';
 import styles from './styles.module.css';
 
 const Display = () => (
@@ -11,7 +13,8 @@ const Display = () => (
         out?
       </p>
 
-      <button className={styles.button}>View Portfolio</button>
+      <Button className={styles.portfolioButton}>View Portfolio</Button>
+      <Button className={styles.gitHubButton}>GitHub</Button>
     </div>
   </section>
 );

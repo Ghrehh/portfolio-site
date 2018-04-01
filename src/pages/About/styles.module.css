@@ -14,7 +14,6 @@
   font-size: 20px;
   text-align: center;
   font-weight: 100;
-  font-family: var(--header-font);
   line-height: 30px;
   max-width: 470px;
   margin: auto;
@@ -27,7 +26,6 @@
   margin: auto;
   text-align: center;
   font-size: 50px;
-  font-family: var(--header-font);
   letter-spacing: 3px;
   margin: auto;
   margin-bottom: 20px;
