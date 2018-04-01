@@ -1,25 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import styles from './styles.module.css';
+import * as oneOrManyElementsModel from 'models/one-or-many-elements.js';
 
-class Page extends React.Component {
-  render() {
-    return (
-      <article>
-        <header>
-          <h2 className={styles.header}>PROJECTS</h2>
-          <div className={styles.headerUnderline} />
-        </header>
-
-        <div className={styles.projects}>{this.renderPage()}</div>
-      </article>
-    );
-  }
-}
+const Page = ({ children }) => (
+  <React.Fragment>
+    <main>{children}</main>
+  </React.Fragment>
+);
 
 Page.propTypes = {
-  projects: PropTypes.array.isRequired
+  projects: PropTypes.array.isRequired,
+  children: oneOrManyElementsModel.PropTypes
 };
 
 export default Page;

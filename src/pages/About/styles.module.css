@@ -1,0 +1,57 @@
+.header {
+  padding: 50px 20px;
+  margin: auto;
+  background-color: white;
+}
+
+.name {
+  color: var(--red);
+  font-size: 40px;
+  margin: auto;
+  text-align: center;
+  font-size: 50px;
+  font-family: var(--header-font);
+  letter-spacing: 3px;
+  margin: auto;
+  margin-bottom: 20px;
+  font-weight: 100;
+  max-width: 600px;
+}
+
+.about {
+  font-size: 24px;
+  text-align: center;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: var(--blue);
+  margin: auto;
+  margin-bottom: 1px;
+  font-family: var(--slab-font);
+  max-width: 600px;
+  line-height: 28px;
+}
+
+.body {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 100;
+  font-family: var(--header-font);
+  line-height: 30px;
+  max-width: 470px;
+  margin: auto;
+  color: var(--blue);
+}
+
+.contactTitle {
+  color: var(--green);
+  font-size: 40px;
+  margin: auto;
+  text-align: center;
+  font-size: 50px;
+  font-family: var(--header-font);
+  letter-spacing: 3px;
+  margin: auto;
+  margin-bottom: 20px;
+  font-weight: 100;
+  max-width: 600px;
+}

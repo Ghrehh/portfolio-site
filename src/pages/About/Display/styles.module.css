@@ -1,0 +1,50 @@
+.display {
+  background-color: var(--purple);
+  background: linear-gradient(to bottom right, var(--purple), var(--orange));
+  box-shadow: var(--box-shadow);
+  padding: 53px;
+  margin-bottom: 38px;
+}
+
+@media (max-width: 450px) {
+  .display {
+    text-align: center;
+  }
+}
+
+.displayInner {
+  max-width: 500px;
+  margin: auto;
+}
+
+.header {
+  color: var(--orange);
+  font-size: 27px;
+  margin-bottom: 20px;
+  font-family: var(--slab-font);
+}
+
+.body {
+  color: white;
+  margin-bottom: 20px;
+  line-height: 21px;
+}
+
+.button {
+  background-color: var(--charcoal);
+  box-shadow: var(--box-shadow);
+  cursor: pointer;
+  color: white;
+  border: none;
+  padding: 11px 15px;
+  border-radius: 3px;
+  font-size: 18px;
+  font-weight: 500;
+  transition: transform 0.5s, filter 0.5s;
+}
+
+.button:hover {
+  transform: translate(0, -3px);
+  filter: brightness(1.3);
+}
+
