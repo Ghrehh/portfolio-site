@@ -1,34 +1,15 @@
-.header {
+.intro {
   padding: 50px 20px;
   margin: auto;
   background-color: white;
 }
 
-.name {
+.heading {
   color: var(--red);
-  font-size: 40px;
-  margin: auto;
-  text-align: center;
-  font-size: 50px;
-  font-family: var(--header-font);
-  letter-spacing: 3px;
-  margin: auto;
-  margin-bottom: 20px;
-  font-weight: 100;
-  max-width: 600px;
 }
 
-.about {
-  font-size: 24px;
-  text-align: center;
-  font-weight: 800;
-  letter-spacing: 2px;
+.subHeading {
   color: var(--blue);
-  margin: auto;
-  margin-bottom: 1px;
-  font-family: var(--slab-font);
-  max-width: 600px;
-  line-height: 28px;
 }
 
 .body {

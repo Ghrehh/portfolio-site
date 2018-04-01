@@ -4,7 +4,7 @@ import ShallowRenderer from 'react-test-renderer/shallow';
 import About from '../';
 
 describe('About', () => {
-  let testContext = {}
+  let testContext = {};
 
   beforeEach(() => {
     testContext.renderer = new ShallowRenderer();

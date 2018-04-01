@@ -1,6 +1,6 @@
 import React from 'react';
 
-import * as oneOrManyElementsModel from 'models/one-or-many-elements.js';
+import * as oneOrManyNodesModel from 'models/one-or-many-nodes.js';
 
 const Page = ({ children }) => (
   <React.Fragment>
@@ -9,7 +9,7 @@ const Page = ({ children }) => (
 );
 
 Page.propTypes = {
-  children: oneOrManyElementsModel.PropTypes.isRequired
+  children: oneOrManyNodesModel.PropTypes.isRequired
 };
 
 export default Page;

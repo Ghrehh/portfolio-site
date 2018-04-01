@@ -1,14 +1,14 @@
 import React from 'react';
 import ShallowRenderer from 'react-test-renderer/shallow';
 
-import Portfolio from '../';
+import Contact from '../';
 
-describe('Portfolio', () => {
+describe('Contact', () => {
   let testContext = {};
 
   beforeEach(() => {
     testContext.renderer = new ShallowRenderer();
-    testContext.renderer.render(<Portfolio />);
+    testContext.renderer.render(<Contact />);
     testContext.result = testContext.renderer.getRenderOutput();
   });
 

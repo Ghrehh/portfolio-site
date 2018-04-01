@@ -1,14 +1,19 @@
 import React from 'react';
 import ShallowRenderer from 'react-test-renderer/shallow';
 
-import Portfolio from '../';
+import SubHeading from '../';
 
-describe('Portfolio', () => {
+describe('SubHeading', () => {
   let testContext = {};
+  let component = (
+    <SubHeading className='foo'>
+      FooBarBaz
+    </SubHeading>
+  )
 
   beforeEach(() => {
     testContext.renderer = new ShallowRenderer();
-    testContext.renderer.render(<Portfolio />);
+    testContext.renderer.render(component);
     testContext.result = testContext.renderer.getRenderOutput();
   });
 

@@ -4,8 +4,8 @@ import ShallowRenderer from 'react-test-renderer/shallow';
 import Page from '../';
 
 describe('Page', () => {
-  let testContext = {}
-  const children = <p>foo</p>
+  let testContext = {};
+  const children = <p>foo</p>;
 
   beforeEach(() => {
     testContext.renderer = new ShallowRenderer();

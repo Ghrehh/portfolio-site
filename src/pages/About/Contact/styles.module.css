@@ -1,0 +1,13 @@
+.contactTitle {
+  color: var(--green);
+  font-size: 40px;
+  margin: auto;
+  text-align: center;
+  font-size: 50px;
+  font-family: var(--header-font);
+  letter-spacing: 3px;
+  margin: auto;
+  margin-bottom: 20px;
+  font-weight: 100;
+  max-width: 600px;
+}
