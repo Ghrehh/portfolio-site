@@ -12,7 +12,7 @@ class App extends React.Component {
     <Router>
       <React.Fragment>
         <Route exact path="/" component={About} />
-        <Route exact path="/portfolio.html" render={this.renderProjects} />
+        <Route exact path="/portfolio" render={this.renderProjects} />
       </React.Fragment>
     </Router>
   );
