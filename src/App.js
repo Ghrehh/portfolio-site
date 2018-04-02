@@ -11,8 +11,8 @@ class App extends React.Component {
   render = () => (
     <Router>
       <React.Fragment>
-        <Route exact path="/about" component={About} />
-        <Route exact path="/" render={this.renderProjects} />
+        <Route exact path="/" component={About} />
+        <Route exact path="/portfolio.html" render={this.renderProjects} />
       </React.Fragment>
     </Router>
   );
