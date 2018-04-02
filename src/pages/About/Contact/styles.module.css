@@ -1,31 +1,74 @@
-.heading {
-  color: var(--green);
-  margin-bottom: 40px;
+.contact {
+  padding: 53px;
+  background-color: var(--light-grey);
 }
 
-.buttonContainer {
+.contactInner {
+  max-width: 850px;
+  margin: auto;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.textContainer {
+  margin-right: 10px;
+}
+
+.heading {
+  margin-bottom: 1px;
+}
+
+.body {
+  margin: 0;
+  font-size: 24px;
+  color: var(--green);
 }
 
 .button {
   width: 150px;
   text-align: center;
-  margin-right: 10px;
-}
-
-.button:last-child {
-  margin-right: 0;
-}
-
-.gitHubButton {
-  background-color: var(--green);
 }
 
 .twitterButton {
+  margin-right: 10px;
   background-color: var(--blue);
 }
 
 .emailButton {
   background-color: var(--red);
+}
+
+@media (max-width: 708px) {
+  .contactInner {
+    justify-content: center;
+  }
+
+  .textContainer {
+    margin-right: 20px;
+  }
+
+  .twitterButton {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 450px) {
+  .button {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .contactInner {
+    display: block;
+  }
+
+  .textContainer {
+    margin-right: 0;
+    margin-bottom: 25px;
+    text-align: center;
+  }
 }

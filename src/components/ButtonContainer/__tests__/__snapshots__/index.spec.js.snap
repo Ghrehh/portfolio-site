@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ButtonContainer renders the component correctly 1`] = `
+<div
+  className={undefined}
+>
+  <div
+    className="buttonSpacer"
+  >
+    <p>
+      foo
+    </p>
+  </div>
+  <div
+    className="buttonSpacer"
+  >
+    <p>
+      bar
+    </p>
+  </div>
+</div>
+`;

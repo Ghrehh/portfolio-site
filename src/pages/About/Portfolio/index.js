@@ -1,22 +1,26 @@
 import React from 'react';
 
+import Heading from 'components/Heading';
 import Button from 'components/Button';
+import ButtonContainer from 'components/ButtonContainer';
 import styles from './styles.module.css';
 
-const Display = () => (
+const Portfolio = () => (
   <section className={styles.display}>
     <div className={styles.displayInner}>
-      <h1 className={styles.header}>PORTFOLIO</h1>
+      <Heading className={styles.heading}>PORTFOLIO</Heading>
 
       <p className={styles.body}>
         I open-source most of my personal projects on GitHub. Why not check them
         out?
       </p>
 
-      <Button className={styles.portfolioButton}>View Portfolio</Button>
-      <Button className={styles.gitHubButton}>GitHub</Button>
+      <ButtonContainer>
+        <Button>View Portfolio</Button>
+        <Button className={styles.gitHubButton}>GitHub</Button>
+      </ButtonContainer>
     </div>
   </section>
 );
 
-export default Display;
+export default Portfolio;

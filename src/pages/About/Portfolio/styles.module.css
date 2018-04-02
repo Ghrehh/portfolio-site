@@ -3,7 +3,6 @@
   background: linear-gradient(to bottom right, var(--purple), var(--orange));
   box-shadow: var(--box-shadow);
   padding: 53px;
-  margin-bottom: 38px;
 }
 
 .displayInner {
@@ -11,21 +10,12 @@
   margin: auto;
 }
 
-.header {
+.heading {
   color: var(--orange);
-  font-size: 27px;
-  margin-bottom: 20px;
-  font-family: var(--slab-font);
 }
 
 .body {
   color: white;
-  margin-bottom: 20px;
-  line-height: 21px;
-}
-
-.portfolioButton {
-  margin-right: 10px;
 }
 
 .gitHubButton {
@@ -44,13 +34,8 @@
   color: var(--charcoal);
 }
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
   .display {
     text-align: center;
-  }
-
-  .portfolioButton {
-    display: block;
-    margin: 0 auto 10px;
   }
 }

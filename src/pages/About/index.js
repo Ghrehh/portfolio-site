@@ -1,9 +1,10 @@
 import React from 'react';
 
 import Page from 'components/Page';
-import Heading from 'components/Heading';
-import SubHeading from 'components/SubHeading';
+import Heading from './Heading';
+import SubHeading from './SubHeading';
 import Portfolio from './Portfolio';
+import Resume from './Resume';
 import Contact from './Contact';
 
 import styles from './styles.module.css';
@@ -24,6 +25,7 @@ const About = () => (
     </section>
 
     <Portfolio />
+    <Resume />
     <Contact />
   </Page>
 );

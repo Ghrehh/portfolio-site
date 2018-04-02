@@ -7,13 +7,17 @@ import styles from './styles.module.css';
 const buttonStyle = additionalStyle => `${styles.button} ${additionalStyle}`;
 
 const Contact = () => (
-  <section>
-    <Heading className={styles.heading}>CONTACT</Heading>
+  <section className={styles.contact}>
+    <div className={styles.contactInner}>
+      <div className={styles.textContainer}>
+        <Heading className={styles.heading}>CONTACT</Heading>
+        <p className={styles.body}>Feel free to get in touch.</p>
+      </div>
 
-    <div className={styles.buttonContainer}>
-      <Button className={buttonStyle(styles.twitterButton)}>Twitter</Button>
-
-      <Button className={buttonStyle(styles.emailButton)}>Email</Button>
+      <div>
+        <Button className={buttonStyle(styles.twitterButton)}>Twitter</Button>
+        <Button className={buttonStyle(styles.emailButton)}>Email</Button>
+      </div>
     </div>
   </section>
 );

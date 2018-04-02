@@ -1,0 +1,19 @@
+.buttonSpacer {
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.buttonSpacer:last-child {
+  margin-right: 0;
+}
+
+@media (max-width: 500px) {
+  .buttonSpacer {
+    display: block;
+    margin: 0 auto 10px;
+  }
+
+  .buttonSpacer:last-child {
+    margin: 0;
+  }
+}

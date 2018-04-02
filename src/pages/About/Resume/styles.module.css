@@ -1,0 +1,56 @@
+.resume {
+  padding: 80px 20px 50px;
+}
+
+.resumeInner {
+  max-width: 500px;
+  margin: auto;
+  padding: 40px;
+  border: 1px solid var(--grey);
+  border-radius: 3px;
+  background-color: white;
+}
+
+.heading {
+  text-align: center;
+}
+
+.body {
+  text-align: center;
+}
+
+.buttonContainer {
+  text-align: center;
+}
+
+.button {
+  width: 150px;
+  text-align: center;
+}
+
+.viewButton {
+  background-color: var(--green);
+}
+
+.downloadButton {
+  background-color: var(--purple);
+}
+
+.slanted {
+  height: 0;
+}
+
+.slantedInner {
+  position: relative;
+  bottom: 190px;
+  background-color: var(--light-grey);
+  clip-path: polygon(0 40%, 100% 0, 100% 100%, 0% 100%);
+  height: 200px;
+  z-index: -1;
+}
+
+@media (max-width: 680px) {
+  .resume {
+    padding: 40px 20px 20px;
+  }
+}

@@ -7,26 +7,26 @@ exports[`Portfolio renders the component correctly 1`] = `
   <div
     className="displayInner"
   >
-    <h1
-      className="header"
+    <Heading
+      className="heading"
     >
       PORTFOLIO
-    </h1>
+    </Heading>
     <p
       className="body"
     >
       I open-source most of my personal projects on GitHub. Why not check them out?
     </p>
-    <Button
-      className="portfolioButton"
-    >
-      View Portfolio
-    </Button>
-    <Button
-      className="gitHubButton"
-    >
-      GitHub
-    </Button>
+    <ButtonContainer>
+      <Button>
+        View Portfolio
+      </Button>
+      <Button
+        className="gitHubButton"
+      >
+        GitHub
+      </Button>
+    </ButtonContainer>
   </div>
 </section>
 `;
