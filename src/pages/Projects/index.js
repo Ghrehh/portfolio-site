@@ -22,13 +22,11 @@ class Projects extends React.Component {
   render() {
     return (
       <Page>
-        <article>
-          <header>
-            <h2 className={styles.header}>PROJECTS</h2>
-          </header>
+        <header>
+          <h2 className={styles.header}>PROJECTS</h2>
+        </header>
 
-          {this.renderProjects()}
-        </article>
+        {this.renderProjects()}
       </Page>
     );
   }

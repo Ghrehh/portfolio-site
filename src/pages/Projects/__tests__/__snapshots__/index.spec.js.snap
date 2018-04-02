@@ -2,33 +2,31 @@
 
 exports[`Projects renders the component correctly 1`] = `
 <Page>
-  <article>
-    <header>
-      <h2
-        className="header"
-      >
-        PROJECTS
-      </h2>
-    </header>
-    <section
-      className="project"
-      style={
-        Object {
-          "backgroundColor": "red",
-        }
-      }
+  <header>
+    <h2
+      className="header"
     >
-      <h2
-        className="name"
-      >
-        foo
-      </h2>
-      <p
-        className="description"
-      >
-        bar
-      </p>
-    </section>
-  </article>
+      PROJECTS
+    </h2>
+  </header>
+  <section
+    className="project"
+    style={
+      Object {
+        "backgroundColor": "red",
+      }
+    }
+  >
+    <h2
+      className="name"
+    >
+      foo
+    </h2>
+    <p
+      className="description"
+    >
+      bar
+    </p>
+  </section>
 </Page>
 `;
