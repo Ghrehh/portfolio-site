@@ -5,7 +5,7 @@ import data from './data';
 import Projects from 'pages/Projects';
 import About from 'pages/About';
 
-class App extends React.Component {
+class Routes extends React.Component {
   renderProjects = () => <Projects projects={data.projects} />;
 
   render = () => (
@@ -18,4 +18,4 @@ class App extends React.Component {
   );
 }
 
-export default App;
+export default Routes;
