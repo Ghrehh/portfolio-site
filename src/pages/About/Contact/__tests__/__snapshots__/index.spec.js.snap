@@ -19,20 +19,20 @@ exports[`Contact renders the component correctly 1`] = `
         >
           CONTACT
         </Heading>
-        <p
-          className="body"
+        <h2
+          className="subHeading"
         >
           Feel free to get in touch.
-        </p>
+        </h2>
       </div>
       <div>
         <Button
-          className="button twitterButton"
+          className="twitterButton"
         >
           Twitter
         </Button>
         <Button
-          className="button emailButton"
+          className="emailButton"
         >
           Email
         </Button>
