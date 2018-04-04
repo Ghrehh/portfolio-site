@@ -1,38 +1,43 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Contact renders the component correctly 1`] = `
-<section
-  className="contact"
->
+<Unknown>
   <div
-    className="contactInner"
+    className="slantedBackground"
+  />
+  <section
+    className="contact"
   >
     <div
-      className="textContainer"
+      className="contactInner"
     >
-      <Heading
-        className="heading"
+      <div
+        className="textContainer"
       >
-        CONTACT
-      </Heading>
-      <p
-        className="body"
-      >
-        Feel free to get in touch.
-      </p>
+        <Heading
+          className="heading"
+        >
+          CONTACT
+        </Heading>
+        <p
+          className="body"
+        >
+          Feel free to get in touch.
+        </p>
+      </div>
+      <div>
+        <Button
+          className="button twitterButton"
+        >
+          Twitter
+        </Button>
+        <Button
+          className="button emailButton"
+        >
+          Email
+        </Button>
+      </div>
     </div>
-    <div>
-      <Button
-        className="button twitterButton"
-      >
-        Twitter
-      </Button>
-      <Button
-        className="button emailButton"
-      >
-        Email
-      </Button>
-    </div>
-  </div>
-</section>
+  </section>
+</Unknown>
 `;
