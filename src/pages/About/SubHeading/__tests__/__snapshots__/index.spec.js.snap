@@ -1,9 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`SubHeading renders the component correctly 1`] = `
-<h2
-  className="subHeading foo"
->
-  FooBarBaz
-</h2>
-`;

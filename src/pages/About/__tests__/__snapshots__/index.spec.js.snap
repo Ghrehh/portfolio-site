@@ -10,11 +10,11 @@ exports[`About renders the component correctly 1`] = `
     >
       HEY, I'M GERARD BURNS
     </Heading>
-    <SubHeading
+    <h2
       className="subHeading"
     >
       A SOFTWARE ENGINEER FROM BELFAST
-    </SubHeading>
+    </h2>
     <p
       className="body"
     >

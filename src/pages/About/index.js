@@ -2,7 +2,6 @@ import React from 'react';
 
 import Page from 'components/Page';
 import Heading from './Heading';
-import SubHeading from './SubHeading';
 import Portfolio from './Portfolio';
 import Resume from './Resume';
 import Contact from './Contact';
@@ -14,9 +13,7 @@ const About = () => (
     <section className={styles.intro}>
       <Heading className={styles.heading}>HEY, I'M GERARD BURNS</Heading>
 
-      <SubHeading className={styles.subHeading}>
-        A SOFTWARE ENGINEER FROM BELFAST
-      </SubHeading>
+      <h2 className={styles.subHeading}>A SOFTWARE ENGINEER FROM BELFAST</h2>
 
       <p className={styles.body}>
         with experience working with both front-end and back-end technologies,
