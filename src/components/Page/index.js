@@ -1,5 +1,4 @@
 import React from 'react';
-
 import * as oneOrManyNodesModel from 'models/one-or-many-nodes.js';
 
 const Page = ({ children }) => (
