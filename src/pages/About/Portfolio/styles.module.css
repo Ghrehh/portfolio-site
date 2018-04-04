@@ -1,5 +1,4 @@
 .display {
-  background-color: var(--purple);
   background: linear-gradient(to bottom right, var(--purple), var(--orange));
   box-shadow: var(--box-shadow);
   padding: 53px;
@@ -23,7 +22,7 @@
   border: 2px solid white;
   border-radius: 4px;
   text-align: center;
-  width: 140px;
+  width: 151px;
   padding: 9px;
   transition: transform 0.5s, background-color 0.3s, color 0.3s;
 }
