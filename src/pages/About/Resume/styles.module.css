@@ -25,7 +25,6 @@
 
 .button {
   width: 150px;
-  text-align: center;
 }
 
 .viewButton {
@@ -36,17 +35,19 @@
   background-color: var(--purple);
 }
 
-.slanted {
-  height: 0;
+.slantedBackground {
+  position: relative;
 }
 
-.slantedInner {
-  position: relative;
-  bottom: 190px;
+.slantedBackground:after {
+  content: "";
+  position: absolute;
   background-color: var(--light-grey);
   clip-path: polygon(0 40%, 100% 0, 100% 100%, 0% 100%);
-  height: 200px;
+  height: 170px;
+  width: 100%;
   z-index: -1;
+  bottom: 0;
 }
 
 @media (max-width: 680px) {

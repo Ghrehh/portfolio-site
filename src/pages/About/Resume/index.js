@@ -28,9 +28,7 @@ const Resume = () => (
       </div>
     </section>
 
-    <div className={styles.slanted}>
-      <div className={styles.slantedInner} />
-    </div>
+    <div className={styles.slantedBackground} />
   </React.Fragment>
 );
 
