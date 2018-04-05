@@ -1,24 +1,15 @@
 // @flow
-
 import * as React from 'react';
+
+import * as childrenAndClassName from 'models/children-and-class-name';
 import styles from './styles.module.css';
 
-type Nodes = React.Node[] | React.Node;
-
-type Props = {
-  children?: Nodes,
-  className?: string
-};
-
-const combineClasses = (
-  baseStyle: string,
-  optionalStyle: string = ''
-): string => `${baseStyle} ${optionalStyle}`;
-
-const Button = (props: Props) => (
-  <button className={combineClasses(styles.button, props.className)}>
+const Button = (props: childrenAndClassName.Type) => (
+  <button className={`${styles.heading} ${props.className}`}>
     {props.children}
   </button>
 );
+
+Button.defaultProps = childrenAndClassName.defaultProps;
 
 export default Button;

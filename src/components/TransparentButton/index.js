@@ -1,14 +1,10 @@
 import React from 'react';
-
-import * as oneOrManyNodesModel from 'models/one-or-many-nodes.js';
 import styles from './styles.module.css';
 
-const TransparentButton = ({ children }) => (
-  <button className={styles.button}>{children}</button>
-);
+type Props = { children: React.Node };
 
-TransparentButton.propTypes = {
-  children: oneOrManyNodesModel.PropTypes.isRequired
-};
+const TransparentButton = (props: Props) => (
+  <button className={styles.button}>{props.children}</button>
+);
 
 export default TransparentButton;

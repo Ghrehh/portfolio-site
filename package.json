@@ -19,7 +19,7 @@
     "lint": "NODE_PATH=./src eslint src --ignore-pattern \"**/__snapshots__/**\"",
     "storybook": "NODE_PATH=./src start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "flow": "flow"
+    "flow": "NODE_PATH=./src flow"
   },
   "devDependencies": {
     "@storybook/addon-actions": "^3.4.0",

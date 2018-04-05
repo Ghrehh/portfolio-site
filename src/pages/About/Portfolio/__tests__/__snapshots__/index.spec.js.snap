@@ -18,7 +18,9 @@ exports[`Portfolio renders the component correctly 1`] = `
       I open-source most of my personal projects on GitHub. Why not check them out?
     </p>
     <ButtonContainer>
-      <Button>
+      <Button
+        className=""
+      >
         View Portfolio
       </Button>
       <Button

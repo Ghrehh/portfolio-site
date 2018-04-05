@@ -1,14 +1,12 @@
-import React from 'react';
-import * as oneOrManyNodesModel from 'models/one-or-many-nodes.js';
+// @flow
+import * as React from 'react';
 
-const Page = ({ children }) => (
+type Props = { children: React.Node };
+
+const Page = (props: Props) => (
   <React.Fragment>
-    <main>{children}</main>
+    <main>{props.children}</main>
   </React.Fragment>
 );
-
-Page.propTypes = {
-  children: oneOrManyNodesModel.PropTypes.isRequired
-};
 
 export default Page;

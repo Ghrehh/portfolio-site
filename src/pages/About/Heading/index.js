@@ -1,18 +1,15 @@
+// @flow
 import React from 'react';
-import PropTypes from 'prop-types';
 
-import * as oneOrManyNodesModel from 'models/one-or-many-nodes.js';
+import * as childrenAndClassName from 'models/children-and-class-name';
 import styles from './styles.module.css';
 
-const Heading = ({ children, className }) => {
-  const combinedClass = `${styles.heading} ${className}`;
+const Heading = (props: childrenAndClassName.Type) => {
+  const combinedClass = `${styles.heading} ${props.className}`;
 
-  return <h1 className={combinedClass}>{children}</h1>;
+  return <h1 className={combinedClass}>{props.children}</h1>;
 };
 
-Heading.propTypes = {
-  children: oneOrManyNodesModel.PropTypes.isRequired,
-  className: PropTypes.string
-};
+Heading.defaultProps = childrenAndClassName.defaultProps;
 
 export default Heading;
