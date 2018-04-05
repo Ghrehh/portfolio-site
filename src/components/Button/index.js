@@ -1,18 +1,24 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+// @flow
 
-import * as oneOrManyNodesModel from 'models/one-or-many-nodes.js';
+import * as React from 'react';
 import styles from './styles.module.css';
 
-const Button = ({ children, className }) => {
-  const combinedClass = `${styles.button} ${className}`;
+type Nodes = React.Node[] | React.Node;
 
-  return <button className={combinedClass}>{children}</button>;
+type Props = {
+  children?: Nodes,
+  className?: string
 };
 
-Button.propTypes = {
-  children: oneOrManyNodesModel.PropTypes.isRequired,
-  className: PropTypes.string
-};
+const combineClasses = (
+  baseStyle: string,
+  optionalStyle: string = ''
+): string => `${baseStyle} ${optionalStyle}`;
+
+const Button = (props: Props) => (
+  <button className={combineClasses(styles.button, props.className)}>
+    {props.children}
+  </button>
+);
 
 export default Button;
