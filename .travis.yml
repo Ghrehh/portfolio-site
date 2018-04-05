@@ -4,6 +4,7 @@ install: npm i
 script: 
  - yarn run test
  - yarn run lint
+ - yarn run flow
  - yarn run build
 
 notifications:
