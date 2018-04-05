@@ -1,11 +1,16 @@
+// @flow
 import React from 'react';
-import PropTypes from 'prop-types';
 
+import * as projectModel from 'models/data/project';
 import Page from 'components/Page';
 
 import styles from './styles.module.css';
 
-class Projects extends React.Component {
+type Props = {
+  projects: projectModel.Type[]
+}
+
+class Projects extends React.Component<Props> {
   renderProjects() {
     return this.props.projects.map((project, index) => (
       <section
@@ -31,9 +36,5 @@ class Projects extends React.Component {
     );
   }
 }
-
-Projects.propTypes = {
-  projects: PropTypes.array.isRequired
-};
 
 export default Projects;
