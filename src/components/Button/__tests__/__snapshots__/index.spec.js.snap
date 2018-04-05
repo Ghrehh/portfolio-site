@@ -2,7 +2,7 @@
 
 exports[`Button renders the component correctly 1`] = `
 <button
-  className="heading foo"
+  className="button foo"
 >
   FooBarBaz
 </button>
