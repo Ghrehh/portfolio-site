@@ -1,4 +1,5 @@
-import React from 'react';
+// @flow
+import * as React from 'react';
 import styles from './styles.module.css';
 
 type Props = { children: React.Node };

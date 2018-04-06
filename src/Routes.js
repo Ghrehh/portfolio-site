@@ -1,11 +1,12 @@
-import React from 'react';
+// @flow
+import * as React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import data from './data';
 import Projects from 'pages/Projects';
 import About from 'pages/About';
 
-class Routes extends React.Component {
+class Routes extends React.Component<{}> {
   renderProjects = () => <Projects projects={data.projects} />;
 
   render = () => (

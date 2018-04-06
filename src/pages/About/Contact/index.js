@@ -1,4 +1,5 @@
-import React from 'react';
+// @flow
+import * as React from 'react';
 
 import Heading from 'components/Heading';
 import Button from 'components/Button';

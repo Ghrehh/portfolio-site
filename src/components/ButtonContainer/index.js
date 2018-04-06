@@ -1,10 +1,16 @@
 // @flow
 import React from 'react';
+import type { Element } from 'react';
 
-import * as childrenAndClassName from 'models/children-and-class-name';
+import Button from 'components/Button';
 import styles from './styles.module.css';
 
-class ButtonContainer extends React.Component<childrenAndClassName.Type> {
+type Props = {
+  children: Element<typeof Button>[],
+  className?: string
+};
+
+class ButtonContainer extends React.Component<Props> {
   renderChildren = () =>
     React.Children.toArray(this.props.children).map((button, index) => (
       <div className={styles.buttonSpacer} key={index}>

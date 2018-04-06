@@ -8,7 +8,7 @@ import styles from './styles.module.css';
 
 type Props = {
   projects: projectModel.Type[]
-}
+};
 
 class Projects extends React.Component<Props> {
   renderProjects() {
