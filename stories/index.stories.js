@@ -11,23 +11,30 @@ import SectionHeading from 'components/SectionHeading';
 import 'reset-css';
 import 'index.module.css';
 
-storiesOf('Display', module)
-  .add('<Page />', () => 
-    <Page>
-      <PageHeading>Some Content</PageHeading>
-      <div style={{ maxWidth: '500px', paddingBottom: '60px', textAlign: 'center', margin: 'auto' }}>
-        <SectionHeading>Some Further Content</SectionHeading>
-        <p>
-          This is the default paragraph style. Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-          dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-          nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-      </div>
-    </Page>)
+storiesOf('Display', module).add('<Page />', () => (
+  <Page>
+    <PageHeading>Some Content</PageHeading>
+    <div
+      style={{
+        maxWidth: '500px',
+        paddingBottom: '60px',
+        textAlign: 'center',
+        margin: 'auto'
+      }}
+    >
+      <SectionHeading>Some Further Content</SectionHeading>
+      <p>
+        This is the default paragraph style. Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </div>
+  </Page>
+));
 
 storiesOf('Buttons', module)
   .add('<Button />', () => <Button>Button</Button>)

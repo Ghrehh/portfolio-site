@@ -1,36 +1,30 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Resume renders the component correctly 1`] = `
-<section
-  className="resume"
->
-  <div
-    className="resumeInner"
+<Card>
+  <SectionHeading
+    className="heading"
   >
-    <SectionHeading
-      className="heading"
+    CV/RESUME
+  </SectionHeading>
+  <p
+    className="body"
+  >
+    Please view my CV for a detailed description of my past and current work.
+  </p>
+  <ButtonContainer
+    className="buttonContainer"
+  >
+    <Button
+      className="viewButton"
     >
-      CV/RESUME
-    </SectionHeading>
-    <p
-      className="body"
+      View CV
+    </Button>
+    <Button
+      className="downloadButton"
     >
-      Please view my CV for a detailed description of my past and current work.
-    </p>
-    <ButtonContainer
-      className="buttonContainer"
-    >
-      <Button
-        className="button viewButton"
-      >
-        View CV
-      </Button>
-      <Button
-        className="button downloadButton"
-      >
-        Download CV
-      </Button>
-    </ButtonContainer>
-  </div>
-</section>
+      Download CV
+    </Button>
+  </ButtonContainer>
+</Card>
 `;
