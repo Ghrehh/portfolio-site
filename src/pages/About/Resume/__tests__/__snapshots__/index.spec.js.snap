@@ -7,11 +7,11 @@ exports[`Resume renders the component correctly 1`] = `
   <div
     className="resumeInner"
   >
-    <Heading
+    <SectionHeading
       className="heading"
     >
       CV/RESUME
-    </Heading>
+    </SectionHeading>
     <p
       className="body"
     >

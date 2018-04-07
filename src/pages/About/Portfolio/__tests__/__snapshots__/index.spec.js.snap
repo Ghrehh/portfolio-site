@@ -7,11 +7,11 @@ exports[`Portfolio renders the component correctly 1`] = `
   <div
     className="displayInner"
   >
-    <Heading
+    <SectionHeading
       className="heading"
     >
       PORTFOLIO
-    </Heading>
+    </SectionHeading>
     <p
       className="body"
     >

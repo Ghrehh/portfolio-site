@@ -1,11 +1,11 @@
 import React from 'react';
 import ShallowRenderer from 'react-test-renderer/shallow';
 
-import Heading from '../';
+import PageHeading from '../';
 
-describe('Heading', () => {
+describe('PageHeading', () => {
   let testContext = {};
-  let component = <Heading className="foo">FooBarBaz</Heading>;
+  let component = <PageHeading className="foo">FooBarBaz</PageHeading>;
 
   beforeEach(() => {
     testContext.renderer = new ShallowRenderer();

@@ -1,7 +1,7 @@
 // @flow
 import React from 'react';
 
-import Heading from 'components/Heading';
+import SectionHeading from 'components/SectionHeading';
 import Button from 'components/Button';
 import ButtonContainer from 'components/ButtonContainer';
 import styles from './styles.module.css';
@@ -9,7 +9,7 @@ import styles from './styles.module.css';
 const Portfolio = () => (
   <section className={styles.display}>
     <div className={styles.displayInner}>
-      <Heading className={styles.heading}>PORTFOLIO</Heading>
+      <SectionHeading className={styles.heading}>PORTFOLIO</SectionHeading>
 
       <p className={styles.body}>
         I open-source most of my personal projects on GitHub. Why not check them

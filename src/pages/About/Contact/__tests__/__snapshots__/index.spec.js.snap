@@ -14,13 +14,13 @@ exports[`Contact renders the component correctly 1`] = `
       <div
         className="textContainer"
       >
-        <Heading
+        <SectionHeading
           className="heading"
         >
           CONTACT
-        </Heading>
+        </SectionHeading>
         <h2
-          className="subHeading"
+          className="subSectionHeading"
         >
           Feel free to get in touch.
         </h2>

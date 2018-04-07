@@ -5,11 +5,11 @@ exports[`About renders the component correctly 1`] = `
   <section
     className="intro"
   >
-    <Heading
+    <PageHeading
       className="heading"
     >
       HEY, I'M GERARD BURNS
-    </Heading>
+    </PageHeading>
     <h2
       className="subHeading"
     >

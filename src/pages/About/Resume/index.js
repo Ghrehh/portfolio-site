@@ -1,7 +1,7 @@
 // @flow
 import React from 'react';
 
-import Heading from 'components/Heading';
+import SectionHeading from 'components/SectionHeading';
 import ButtonContainer from 'components/ButtonContainer';
 import Button from 'components/Button';
 import styles from './styles.module.css';
@@ -11,7 +11,7 @@ const buttonStyle = additionalStyle => `${styles.button} ${additionalStyle}`;
 const Resume = () => (
   <section className={styles.resume}>
     <div className={styles.resumeInner}>
-      <Heading className={styles.heading}>CV/RESUME</Heading>
+      <SectionHeading className={styles.heading}>CV/RESUME</SectionHeading>
 
       <p className={styles.body}>
         Please view my CV for a detailed description of my past and current

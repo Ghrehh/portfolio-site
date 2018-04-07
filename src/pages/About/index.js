@@ -2,7 +2,7 @@
 import React from 'react';
 
 import Page from 'components/Page';
-import Heading from './Heading';
+import PageHeading from 'components/PageHeading';
 import Portfolio from './Portfolio';
 import Resume from './Resume';
 import Contact from './Contact';
@@ -12,7 +12,9 @@ import styles from './styles.module.css';
 const About = () => (
   <Page>
     <section className={styles.intro}>
-      <Heading className={styles.heading}>HEY, I'M GERARD BURNS</Heading>
+      <PageHeading className={styles.heading}>
+        HEY, I'M GERARD BURNS
+      </PageHeading>
 
       <h2 className={styles.subHeading}>A SOFTWARE ENGINEER FROM BELFAST</h2>
 
