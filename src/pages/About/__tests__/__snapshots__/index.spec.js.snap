@@ -23,6 +23,5 @@ exports[`About renders the component correctly 1`] = `
   </section>
   <Portfolio />
   <Resume />
-  <Contact />
 </Page>
 `;

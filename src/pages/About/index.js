@@ -5,7 +5,6 @@ import Page from 'components/Page';
 import PageHeading from 'components/PageHeading';
 import Portfolio from './Portfolio';
 import Resume from './Resume';
-import Contact from './Contact';
 
 import styles from './styles.module.css';
 
@@ -26,7 +25,6 @@ const About = () => (
 
     <Portfolio />
     <Resume />
-    <Contact />
   </Page>
 );
 

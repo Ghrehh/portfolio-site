@@ -6,17 +6,15 @@ import Button from 'components/Button';
 
 import styles from './styles.module.css';
 
-const Contact = () => (
+const Footer = () => (
   <React.Fragment>
     <div className={styles.slantedBackground} />
 
-    <section className={styles.contact}>
-      <div className={styles.contactInner}>
+    <footer className={styles.footer}>
+      <div className={styles.footerInner}>
         <div className={styles.textContainer}>
           <SectionHeading className={styles.heading}>CONTACT</SectionHeading>
-          <h2 className={styles.subSectionHeading}>
-            Feel free to get in touch.
-          </h2>
+          <h2 className={styles.subHeading}>Feel free to get in touch.</h2>
         </div>
 
         <div>
@@ -24,8 +22,8 @@ const Contact = () => (
           <Button className={styles.emailButton}>Email</Button>
         </div>
       </div>
-    </section>
+    </footer>
   </React.Fragment>
 );
 
-export default Contact;
+export default Footer;

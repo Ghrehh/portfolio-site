@@ -13,12 +13,12 @@
   bottom: 0;
 }
 
-.contact {
+.footer {
   padding: 53px;
   background-color: var(--light-grey);
 }
 
-.contactInner {
+.footerInner {
   max-width: 850px;
   margin: auto;
   display: flex;
@@ -53,7 +53,7 @@
 }
 
 @media (max-width: 708px) {
-  .contactInner {
+  .footerInner {
     justify-content: center;
   }
 
@@ -75,7 +75,7 @@
     margin-left: auto;
   }
 
-  .contactInner {
+  .footerInner {
     display: block;
   }
 

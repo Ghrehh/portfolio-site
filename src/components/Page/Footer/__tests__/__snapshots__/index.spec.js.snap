@@ -1,15 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Contact renders the component correctly 1`] = `
+exports[`Footer renders the component correctly 1`] = `
 <Unknown>
   <div
     className="slantedBackground"
   />
-  <section
-    className="contact"
+  <footer
+    className="footer"
   >
     <div
-      className="contactInner"
+      className="footerInner"
     >
       <div
         className="textContainer"
@@ -20,7 +20,7 @@ exports[`Contact renders the component correctly 1`] = `
           CONTACT
         </SectionHeading>
         <h2
-          className="subSectionHeading"
+          className="subHeading"
         >
           Feel free to get in touch.
         </h2>
@@ -38,6 +38,6 @@ exports[`Contact renders the component correctly 1`] = `
         </Button>
       </div>
     </div>
-  </section>
+  </footer>
 </Unknown>
 `;
