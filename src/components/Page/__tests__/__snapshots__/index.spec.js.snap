@@ -1,12 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Page renders the component correctly 1`] = `
-<Unknown>
+<div
+  className="page"
+>
   <main>
     <p>
       foo
     </p>
   </main>
   <Footer />
-</Unknown>
+</div>
 `;
