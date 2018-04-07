@@ -1,13 +1,12 @@
 import React from 'react';
 
 import { storiesOf } from '@storybook/react';
-import { action } from '@storybook/addon-actions';
-import { linkTo } from '@storybook/addon-links';
 import 'index.module.css';
 
 import Button from 'components/Button';
 import ButtonContainer from 'components/ButtonContainer';
-import Heading from 'components/Heading';
+import PageHeading from 'components/PageHeading';
+import SectionHeading from 'components/SectionHeading';
 
 storiesOf('Components/Buttons', module)
   .add('<Button />', () => <Button>Button</Button>)
@@ -17,9 +16,25 @@ storiesOf('Components/Buttons', module)
       <Button>Button 2</Button>
       <Button>Button 3</Button>
     </ButtonContainer>
-  ))
+  ));
 
 storiesOf('Components/Text', module)
-  .add('<Heading />', () => (
-    <Heading>This is a heading with some cool text of a decent length</Heading>)
-  );
+  .add('<PageHeading />', () => (
+    <PageHeading>This is the Heading Used At the Top Of Pages</PageHeading>
+  ))
+  .add('<SectionHeading />', () => (
+    <SectionHeading>
+      This is the heading Used at the Top of Sections
+    </SectionHeading>
+  ))
+  .add('<p />', () => (
+    <p style={{ maxWidth: '500px' }}>
+      This is the default paragraph style. Lorem ipsum dolor sit amet,
+      consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+      dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+      ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+      dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+      nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+      culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+  ));

@@ -16,7 +16,7 @@
     "build": "NODE_PATH=./src react-scripts build",
     "test": "NODE_PATH=./src react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "lint": "NODE_PATH=./src eslint src --ignore-pattern \"**/__snapshots__/**\"",
+    "lint": "NODE_PATH=./src eslint src stories --ignore-pattern \"**/__snapshots__/**\"",
     "storybook": "NODE_PATH=./src start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "flow": "NODE_PATH=./src flow"
