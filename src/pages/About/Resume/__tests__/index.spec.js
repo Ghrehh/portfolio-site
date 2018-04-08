@@ -7,6 +7,7 @@ describe('Resume', () => {
   let testContext = {};
 
   beforeEach(() => {
+    testContext = {};
     testContext.renderer = new ShallowRenderer();
     testContext.renderer.render(<Resume />);
     testContext.result = testContext.renderer.getRenderOutput();

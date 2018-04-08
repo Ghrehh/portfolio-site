@@ -5,14 +5,17 @@ import ButtonContainer from '../';
 
 describe('ButtonContainer', () => {
   let testContext = {};
-  let component = (
-    <ButtonContainer>
-      <p>foo</p>
-      <p>bar</p>
-    </ButtonContainer>
-  );
 
   beforeEach(() => {
+    testContext = {};
+
+    const component = (
+      <ButtonContainer>
+        <p>foo</p>
+        <p>bar</p>
+      </ButtonContainer>
+    );
+
     testContext.renderer = new ShallowRenderer();
     testContext.renderer.render(component);
     testContext.result = testContext.renderer.getRenderOutput();

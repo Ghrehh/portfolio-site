@@ -5,11 +5,15 @@ import Page from '../';
 
 describe('Page', () => {
   let testContext = {};
-  const children = <p>foo</p>;
 
   beforeEach(() => {
+    testContext = {};
     testContext.renderer = new ShallowRenderer();
-    testContext.renderer.render(<Page>{children}</Page>);
+    testContext.renderer.render(
+      <Page>
+        <p>foo</p>
+      </Page>
+    );
     testContext.result = testContext.renderer.getRenderOutput();
   });
 

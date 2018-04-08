@@ -5,14 +5,16 @@ import Card from '../';
 
 describe('Card', () => {
   let testContext = {};
-  let component = (
-    <Card className="foo">
-      <p>Foo</p>
-      <p>bar</p>
-    </Card>
-  );
 
   beforeEach(() => {
+    testContext = {};
+
+    const component = (
+      <Card className="foo">
+        <p>Foo</p>
+        <p>bar</p>
+      </Card>
+    );
     testContext.renderer = new ShallowRenderer();
     testContext.renderer.render(component);
     testContext.result = testContext.renderer.getRenderOutput();

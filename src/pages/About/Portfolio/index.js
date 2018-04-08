@@ -3,6 +3,7 @@ import React from 'react';
 
 import SectionHeading from 'components/SectionHeading';
 import Button from 'components/Button';
+import LinkButton from 'components/LinkButton';
 import ButtonContainer from 'components/ButtonContainer';
 import styles from './styles.module.css';
 
@@ -17,7 +18,7 @@ const Portfolio = () => (
       </p>
 
       <ButtonContainer>
-        <Button>View Portfolio</Button>
+        <LinkButton link="/portfolio">View Portfolio</LinkButton>
         <Button className={styles.gitHubButton}>GitHub</Button>
       </ButtonContainer>
     </div>

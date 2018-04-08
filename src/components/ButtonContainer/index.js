@@ -2,10 +2,13 @@
 import * as React from 'react';
 
 import Button from 'components/Button';
+import LinkButton from 'components/LinkButton';
 import styles from './styles.module.css';
 
+type ButtonTypes = typeof Button | typeof LinkButton;
+
 type Props = {
-  children: React.Element<typeof Button>[],
+  children: React.Element<ButtonTypes>[],
   className?: string
 };
 

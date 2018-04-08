@@ -5,9 +5,12 @@ import PageHeading from '../';
 
 describe('PageHeading', () => {
   let testContext = {};
-  let component = <PageHeading className="foo">FooBarBaz</PageHeading>;
 
   beforeEach(() => {
+    testContext = {};
+
+    const component = <PageHeading className="foo">FooBarBaz</PageHeading>;
+
     testContext.renderer = new ShallowRenderer();
     testContext.renderer.render(component);
     testContext.result = testContext.renderer.getRenderOutput();

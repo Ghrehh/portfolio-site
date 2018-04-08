@@ -7,6 +7,7 @@ describe('Footer', () => {
   let testContext = {};
 
   beforeEach(() => {
+    testContext = {};
     testContext.renderer = new ShallowRenderer();
     testContext.renderer.render(<Footer />);
     testContext.result = testContext.renderer.getRenderOutput();

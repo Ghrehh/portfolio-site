@@ -1,15 +1,15 @@
 import React from 'react';
 import ShallowRenderer from 'react-test-renderer/shallow';
 
-import Heading from '../';
+import LinkButton from '../';
 
-describe('Heading', () => {
+describe('LinkButton', () => {
   let testContext = {};
 
   beforeEach(() => {
     testContext = {};
 
-    let component = <Heading className="foo">FooBarBaz</Heading>;
+    const component = <LinkButton link="./page">Foo</LinkButton>;
 
     testContext.renderer = new ShallowRenderer();
     testContext.renderer.render(component);

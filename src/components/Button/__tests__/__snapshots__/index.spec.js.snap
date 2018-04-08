@@ -1,8 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Button renders the component correctly 1`] = `
+exports[`Button rendering renders the component correctly 1`] = `
 <button
   className="button foo"
+  onClick={[Function]}
 >
   FooBarBaz
 </button>

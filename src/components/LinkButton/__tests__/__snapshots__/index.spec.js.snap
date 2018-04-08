@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LinkButton renders the component correctly 1`] = `
+<Button
+  className={undefined}
+>
+  <Link
+    className="link"
+    replace={false}
+    to="./page"
+  >
+    Foo
+  </Link>
+</Button>
+`;
