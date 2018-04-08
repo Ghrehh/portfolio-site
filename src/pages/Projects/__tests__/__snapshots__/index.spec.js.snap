@@ -7,6 +7,15 @@ exports[`Projects renders the component correctly 1`] = `
   >
     PROJECTS
   </PageHeading>
+  <div
+    className="buttonContainer"
+  >
+    <LinkButton
+      link="/"
+    >
+      ⇦ Return
+    </LinkButton>
+  </div>
   <Project
     path="cool-project"
     project={

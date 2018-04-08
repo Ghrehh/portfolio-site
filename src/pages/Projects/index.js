@@ -2,8 +2,10 @@
 import React from 'react';
 
 import * as projectsModel from 'models/data/projects';
+import * as pathConstants from 'constants/paths';
 import Page from 'components/Page';
 import PageHeading from 'components/PageHeading';
+import LinkButton from 'components/LinkButton';
 import Project from './Project';
 
 import styles from './styles.module.css';
@@ -19,6 +21,10 @@ class Projects extends React.Component<{ projects: projectsModel.Type }> {
     return (
       <Page>
         <PageHeading className={styles.title}>PROJECTS</PageHeading>
+        <div className={styles.buttonContainer}>
+          <LinkButton link={pathConstants.ABOUT}>⇦ Return</LinkButton>
+        </div>
+
         {this.renderProjects()}
       </Page>
     );

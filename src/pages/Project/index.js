@@ -3,8 +3,10 @@ import React from 'react';
 
 import * as projectsModel from 'models/data/projects';
 import * as projectRouterParams from 'models/project-router-params';
+import * as pathConstants from 'constants/paths';
 import Page from 'components/Page';
 import PageHeading from 'components/PageHeading';
+import LinkButton from 'components/LinkButton';
 
 import styles from './styles.module.css';
 
@@ -24,6 +26,10 @@ class Project extends React.Component<Props> {
         <PageHeading className={styles.title}>
           {this.project().name}
         </PageHeading>
+
+        <div className={styles.buttonContainer}>
+          <LinkButton link={pathConstants.PROJECTS}>⇦ Return</LinkButton>
+        </div>
       </Page>
     );
   }

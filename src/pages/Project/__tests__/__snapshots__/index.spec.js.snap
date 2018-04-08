@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Project renders the component correctly 1`] = `
+<Page
+  style={
+    Object {
+      "backgroundColor": "red",
+    }
+  }
+>
+  <PageHeading
+    className="title"
+  >
+    foo
+  </PageHeading>
+  <div
+    className="buttonContainer"
+  >
+    <LinkButton
+      link="/projects"
+    >
+      ⇦ Return
+    </LinkButton>
+  </div>
+</Page>
+`;

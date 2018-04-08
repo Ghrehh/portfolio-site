@@ -12,9 +12,7 @@ type Props = {
 
 const LinkButton = (props: Props) => (
   <UnstyledLink link={props.link}>
-    <Button className={props.className}>
-      {props.children}
-    </Button>
+    <Button className={props.className}>{props.children}</Button>
   </UnstyledLink>
 );
 

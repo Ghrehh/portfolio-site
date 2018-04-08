@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import data from './data';
 import * as projectRouterParams from 'models/project-router-params';
-import * as pathsConstants from 'constants/paths';
+import * as pathConstants from 'constants/paths';
 import Projects from 'pages/Projects';
 import Project from 'pages/Project';
 import About from 'pages/About';
@@ -21,15 +21,15 @@ class Routes extends React.Component<{}> {
   render = () => (
     <Router>
       <React.Fragment>
-        <Route exact path={pathsConstants.ABOUT} component={About} />
+        <Route exact path={pathConstants.ABOUT} component={About} />
         <Route
           exact
-          path={pathsConstants.PROJECTS}
+          path={pathConstants.PROJECTS}
           render={this.renderProjects}
         />
         <Route
           exact
-          path={`${pathsConstants.PROJECTS}/:project`}
+          path={`${pathConstants.PROJECTS}/:project`}
           render={this.renderProject}
         />
       </React.Fragment>

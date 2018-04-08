@@ -2,3 +2,8 @@
   color: var(--red);
   margin-bottom: 55px;
 }
+
+.buttonContainer {
+  text-align: center;
+  margin-bottom: 40px;
+}

@@ -1,9 +1,9 @@
 import React from 'react';
 import ShallowRenderer from 'react-test-renderer/shallow';
 
-import Projects from '../';
+import Project from '../';
 
-describe('Projects', () => {
+describe('Project', () => {
   let testContext = {};
 
   beforeEach(() => {
@@ -17,8 +17,15 @@ describe('Projects', () => {
       }
     };
 
+    const component = (
+      <Project
+        projects={projects}
+        match={{ params: { project: 'cool-project' } }}
+      />
+    );
+
     testContext.renderer = new ShallowRenderer();
-    testContext.renderer.render(<Projects projects={projects} />);
+    testContext.renderer.render(component);
     testContext.result = testContext.renderer.getRenderOutput();
   });
 

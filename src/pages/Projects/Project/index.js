@@ -2,7 +2,7 @@
 import React from 'react';
 
 import * as projectModel from 'models/data/project';
-import * as pathsConstants from 'constants/paths';
+import * as pathConstants from 'constants/paths';
 import SectionHeading from 'components/SectionHeading';
 import UnstyledLink from 'components/UnstyledLink';
 
@@ -11,11 +11,11 @@ import styles from './styles.module.css';
 type Props = {
   project: projectModel.Type,
   path: string
-}
+};
 
 const Project = (props: Props) => (
   <div className={styles.project}>
-    <UnstyledLink link={`${pathsConstants.PROJECTS}/${props.path}`}>
+    <UnstyledLink link={`${pathConstants.PROJECTS}/${props.path}`}>
       <div
         style={{ backgroundColor: props.project.backgroundColor }}
         className={styles.projectInner}
