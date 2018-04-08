@@ -26,7 +26,6 @@
 .name {
   margin: auto;
   max-width: 400px;
-  color: white;
   letter-spacing: 3px;
   font-size: 55px;
   margin-bottom: 15px;
@@ -37,7 +36,6 @@
 .description {
   margin: auto;
   max-width: 300px;
-  color: white;
   font-size: 14px;
 }
 

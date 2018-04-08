@@ -3,6 +3,8 @@ import React from 'react';
 
 import * as projectModel from 'models/data/project';
 import Page from 'components/Page';
+import Card from 'components/Card';
+import PageHeading from 'components/PageHeading';
 
 import styles from './styles.module.css';
 
@@ -13,23 +15,17 @@ type Props = {
 class Projects extends React.Component<Props> {
   renderProjects() {
     return this.props.projects.map((project, index) => (
-      <section
-        className={styles.project}
-        key={index}
-        style={{ backgroundColor: project.backgroundColor }}
-      >
+      <Card key={index}>
         <h2 className={styles.name}>{project.name}</h2>
         <p className={styles.description}>{project.description}</p>
-      </section>
+      </Card>
     ));
   }
 
   render() {
     return (
       <Page>
-        <header>
-          <h2 className={styles.header}>PROJECTS</h2>
-        </header>
+        <PageHeading>PROJECTS</PageHeading>
 
         {this.renderProjects()}
       </Page>

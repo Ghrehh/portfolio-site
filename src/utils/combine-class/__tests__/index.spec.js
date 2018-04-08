@@ -36,4 +36,14 @@ describe('combinedClass', () => {
       expect(testContext.result).toEqual('foo bar baz');
     });
   });
+
+  describe('with many arguments, some of which are undefined', () => {
+    beforeEach(() => {
+      testContext.result = combineClass('foo', undefined, 'baz');
+    });
+
+    it('should return', () => {
+      expect(testContext.result).toEqual('foo baz');
+    });
+  });
 });

@@ -2,21 +2,12 @@
 
 exports[`Projects renders the component correctly 1`] = `
 <Page>
-  <header>
-    <h2
-      className="header"
-    >
-      PROJECTS
-    </h2>
-  </header>
-  <section
-    className="project"
-    style={
-      Object {
-        "backgroundColor": "red",
-      }
-    }
+  <PageHeading
+    className=""
   >
+    PROJECTS
+  </PageHeading>
+  <Card>
     <h2
       className="name"
     >
@@ -27,6 +18,6 @@ exports[`Projects renders the component correctly 1`] = `
     >
       bar
     </p>
-  </section>
+  </Card>
 </Page>
 `;
