@@ -3,21 +3,18 @@
 exports[`Projects renders the component correctly 1`] = `
 <Page>
   <PageHeading
-    className=""
+    className="title"
   >
     PROJECTS
   </PageHeading>
-  <Card>
-    <h2
-      className="name"
-    >
-      foo
-    </h2>
-    <p
-      className="description"
-    >
-      bar
-    </p>
-  </Card>
+  <Projects
+    project={
+      Object {
+        "backgroundColor": "red",
+        "description": "bar",
+        "name": "foo",
+      }
+    }
+  />
 </Page>
 `;

@@ -3,30 +3,22 @@ import React from 'react';
 
 import * as projectModel from 'models/data/project';
 import Page from 'components/Page';
-import Card from 'components/Card';
 import PageHeading from 'components/PageHeading';
+import Project from './Project';
 
 import styles from './styles.module.css';
 
-type Props = {
-  projects: projectModel.Type[]
-};
-
-class Projects extends React.Component<Props> {
+class Projects extends React.Component<{ projects: projectModel.Type[] }> {
   renderProjects() {
     return this.props.projects.map((project, index) => (
-      <Card key={index}>
-        <h2 className={styles.name}>{project.name}</h2>
-        <p className={styles.description}>{project.description}</p>
-      </Card>
+      <Project project={project} key={index} />
     ));
   }
 
   render() {
     return (
       <Page>
-        <PageHeading>PROJECTS</PageHeading>
-
+        <PageHeading className={styles.title}>PROJECTS</PageHeading>
         {this.renderProjects()}
       </Page>
     );

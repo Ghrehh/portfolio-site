@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Project renders the component correctly 1`] = `
+<div
+  className="project"
+>
+  <div
+    className="projectInner"
+    style={
+      Object {
+        "backgroundColor": "red",
+      }
+    }
+  >
+    <SectionHeading
+      className="projectName"
+    >
+      foo
+    </SectionHeading>
+    <p
+      className="projectBody"
+    >
+      bar
+    </p>
+  </div>
+</div>
+`;

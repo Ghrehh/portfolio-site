@@ -1,20 +1,15 @@
 import React from 'react';
 import ShallowRenderer from 'react-test-renderer/shallow';
 
-import Card from '../';
+import Project from '../';
 
-describe('Card', () => {
+describe('Project', () => {
   let testContext = {};
-  let component = (
-    <Card className="foo">
-      <p>Foo</p>
-      <p>bar</p>
-    </Card>
-  );
+  const project = { name: 'foo', description: 'bar', backgroundColor: 'red' };
 
   beforeEach(() => {
     testContext.renderer = new ShallowRenderer();
-    testContext.renderer.render(component);
+    testContext.renderer.render(<Project project={project} />);
     testContext.result = testContext.renderer.getRenderOutput();
   });
 

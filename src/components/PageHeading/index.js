@@ -11,6 +11,4 @@ const PageHeading = (props: childrenAndClassName.Type) => (
   </h1>
 );
 
-PageHeading.defaultProps = childrenAndClassName.defaultProps;
-
 export default PageHeading;

@@ -11,6 +11,4 @@ const Button = (props: childrenAndClassName.Type) => (
   </button>
 );
 
-Button.defaultProps = childrenAndClassName.defaultProps;
-
 export default Button;

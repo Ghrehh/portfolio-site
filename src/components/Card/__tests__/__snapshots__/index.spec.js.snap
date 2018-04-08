@@ -5,7 +5,7 @@ exports[`Card renders the component correctly 1`] = `
   className="card"
 >
   <div
-    className="cardInner"
+    className="cardInner foo"
   >
     <p>
       Foo

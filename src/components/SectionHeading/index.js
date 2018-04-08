@@ -11,6 +11,4 @@ const SectionHeading = (props: childrenAndClassName.Type) => (
   </h1>
 );
 
-SectionHeading.defaultProps = childrenAndClassName.defaultProps;
-
 export default SectionHeading;

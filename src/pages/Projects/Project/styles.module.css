@@ -1,0 +1,45 @@
+.project {
+  margin: 40px 20px 20px;
+  transition: transform 0.5s, filter 0.5s;
+}
+
+.project:hover {
+  cursor: pointer;
+  transform: translate(0, -4px);
+  filter: brightness(1.1);
+}
+
+.projectInner {
+  max-width: 500px;
+  margin: auto;
+  padding: 40px;
+  border-radius: 3px;
+  background-color: white;
+  text-align: center;
+}
+
+.projectName {
+  color: white;
+}
+
+.projectBody {
+  margin: 0;
+  color: white;
+}
+
+@media (max-width: 530px) {
+  .project {
+    margin: 0;
+  }
+
+  .project:hover {
+    transform: initial;
+  }
+
+  .projectInner {
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+}
+
