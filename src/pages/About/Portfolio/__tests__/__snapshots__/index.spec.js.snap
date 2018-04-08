@@ -19,7 +19,7 @@ exports[`Portfolio renders the component correctly 1`] = `
     </p>
     <ButtonContainer>
       <LinkButton
-        link="/portfolio"
+        link="/projects"
       >
         View Portfolio
       </LinkButton>

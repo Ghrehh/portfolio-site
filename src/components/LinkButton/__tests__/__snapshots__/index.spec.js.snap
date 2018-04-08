@@ -1,15 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`LinkButton rendering renders the component correctly 1`] = `
-<Button
-  className={undefined}
-  onClick={[Function]}
+<div
+  className="link"
+  to="./page"
 >
-  <div
-    className="link"
-    to="./page"
+  <Button
+    className={undefined}
+    onClick={[Function]}
   >
     Foo
-  </div>
-</Button>
+  </Button>
+</div>
 `;

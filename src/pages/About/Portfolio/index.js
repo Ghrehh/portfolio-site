@@ -5,6 +5,7 @@ import SectionHeading from 'components/SectionHeading';
 import Button from 'components/Button';
 import LinkButton from 'components/LinkButton';
 import ButtonContainer from 'components/ButtonContainer';
+import * as pathsConstants from 'constants/paths';
 import styles from './styles.module.css';
 
 const Portfolio = () => (
@@ -18,7 +19,7 @@ const Portfolio = () => (
       </p>
 
       <ButtonContainer>
-        <LinkButton link="/portfolio">View Portfolio</LinkButton>
+        <LinkButton link={pathsConstants.PROJECTS}>View Portfolio</LinkButton>
         <Button className={styles.gitHubButton}>GitHub</Button>
       </ButtonContainer>
     </div>
