@@ -3,20 +3,26 @@ import ShallowRenderer from 'react-test-renderer/shallow';
 
 import LinkButton from '../';
 
+jest.mock('react-router-dom', () => ({ Link: 'div' }));
+
 describe('LinkButton', () => {
   let testContext = {};
 
   beforeEach(() => {
     testContext = {};
 
-    const component = <LinkButton link="./page">Foo</LinkButton>;
-
-    testContext.renderer = new ShallowRenderer();
-    testContext.renderer.render(component);
-    testContext.result = testContext.renderer.getRenderOutput();
+    testContext.component = <LinkButton link="./page">Foo</LinkButton>;
   });
 
-  it('renders the component correctly', () => {
-    expect(testContext.result).toMatchSnapshot();
+  describe('rendering', () => {
+    beforeEach(() => {
+      testContext.renderer = new ShallowRenderer();
+      testContext.renderer.render(testContext.component);
+      testContext.result = testContext.renderer.getRenderOutput();
+    });
+
+    it('renders the component correctly', () => {
+      expect(testContext.result).toMatchSnapshot();
+    });
   });
 });

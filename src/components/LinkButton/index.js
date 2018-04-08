@@ -11,8 +11,10 @@ type Props = {
   link: string
 };
 
+const scrollToTop = () => window.scrollTo(0, 0);
+
 const LinkButton = (props: Props) => (
-  <Button className={props.className}>
+  <Button onClick={scrollToTop} className={props.className}>
     <Link to={props.link} className={styles.link}>
       {props.children}
     </Link>
