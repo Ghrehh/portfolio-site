@@ -4,11 +4,14 @@ import * as React from 'react';
 import Footer from './Footer';
 import styles from './styles.module.css';
 
-type Props = { children: React.Node };
+type Props = {
+  children: React.Node,
+  style?: {}
+};
 
 const Page = (props: Props) => (
-  <div className={styles.page}>
-    <main>{props.children}</main>
+  <div style={props.style} className={styles.page}>
+    <main className={styles.main}>{props.children}</main>
     <Footer />
   </div>
 );

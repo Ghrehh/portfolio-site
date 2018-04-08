@@ -1,15 +1,17 @@
 import React from 'react';
 import ShallowRenderer from 'react-test-renderer/shallow';
 
-import LinkButton from '../';
+import UnstyledLink from '../';
 
-describe('LinkButton', () => {
+jest.mock('react-router-dom', () => ({ Link: 'div' }));
+
+describe('UnstyledLink', () => {
   let testContext = {};
 
   beforeEach(() => {
     testContext = {};
 
-    testContext.component = <LinkButton link="./page">Foo</LinkButton>;
+    testContext.component = <UnstyledLink link="./page">Foo</UnstyledLink>;
   });
 
   describe('rendering', () => {

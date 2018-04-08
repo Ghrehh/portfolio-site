@@ -9,9 +9,9 @@ describe('Projects', () => {
   beforeEach(() => {
     testContext = {};
 
-    const projects = [
-      { name: 'foo', description: 'bar', backgroundColor: 'red' }
-    ];
+    const projects = {
+      'cool-project': { name: 'foo', description: 'bar', backgroundColor: 'red' }
+    };
 
     testContext.renderer = new ShallowRenderer();
     testContext.renderer.render(<Projects projects={projects} />);

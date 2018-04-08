@@ -4,24 +4,28 @@ exports[`Project renders the component correctly 1`] = `
 <div
   className="project"
 >
-  <div
-    className="projectInner"
-    style={
-      Object {
-        "backgroundColor": "red",
-      }
-    }
+  <LinkButton
+    link="/projects/undefined"
   >
-    <SectionHeading
-      className="projectName"
+    <div
+      className="projectInner"
+      style={
+        Object {
+          "backgroundColor": "red",
+        }
+      }
     >
-      foo
-    </SectionHeading>
-    <p
-      className="projectBody"
-    >
-      bar
-    </p>
-  </div>
+      <SectionHeading
+        className="projectName"
+      >
+        foo
+      </SectionHeading>
+      <p
+        className="projectBody"
+      >
+        bar
+      </p>
+    </div>
+  </LinkButton>
 </div>
 `;

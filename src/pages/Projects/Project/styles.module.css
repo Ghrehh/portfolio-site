@@ -9,6 +9,10 @@
   filter: brightness(1.1);
 }
 
+.link {
+  text-decoration: none;
+}
+
 .projectInner {
   max-width: 500px;
   margin: auto;

@@ -10,7 +10,7 @@ describe('Page', () => {
     testContext = {};
     testContext.renderer = new ShallowRenderer();
     testContext.renderer.render(
-      <Page>
+      <Page style={{ backgroundColor: 'blue' }}>
         <p>foo</p>
       </Page>
     );

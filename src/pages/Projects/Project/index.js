@@ -2,22 +2,31 @@
 import React from 'react';
 
 import * as projectModel from 'models/data/project';
+import * as pathsConstants from 'constants/paths';
 import SectionHeading from 'components/SectionHeading';
+import UnstyledLink from 'components/UnstyledLink';
 
 import styles from './styles.module.css';
 
-const Projects = (props: { project: projectModel.Type }) => (
+type Props = {
+  project: projectModel.Type,
+  path: string
+}
+
+const Project = (props: Props) => (
   <div className={styles.project}>
-    <div
-      style={{ backgroundColor: props.project.backgroundColor }}
-      className={styles.projectInner}
-    >
-      <SectionHeading className={styles.projectName}>
-        {props.project.name}
-      </SectionHeading>
-      <p className={styles.projectBody}>{props.project.description}</p>
-    </div>
+    <UnstyledLink link={`${pathsConstants.PROJECTS}/${props.path}`}>
+      <div
+        style={{ backgroundColor: props.project.backgroundColor }}
+        className={styles.projectInner}
+      >
+        <SectionHeading className={styles.projectName}>
+          {props.project.name}
+        </SectionHeading>
+        <p className={styles.projectBody}>{props.project.description}</p>
+      </div>
+    </UnstyledLink>
   </div>
 );
 
-export default Projects;
+export default Project;

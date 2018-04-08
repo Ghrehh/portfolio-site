@@ -7,7 +7,8 @@ exports[`Projects renders the component correctly 1`] = `
   >
     PROJECTS
   </PageHeading>
-  <Projects
+  <Project
+    path="cool-project"
     project={
       Object {
         "backgroundColor": "red",
