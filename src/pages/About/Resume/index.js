@@ -9,7 +9,7 @@ import styles from './styles.module.css';
 
 const Resume = () => (
   <Card>
-    <SectionHeading className={styles.heading}>CV/RESUME</SectionHeading>
+    <SectionHeading>CV/RESUME</SectionHeading>
 
     <p className={styles.body}>
       Please view my CV for a detailed description of my past and current work.

@@ -4,4 +4,11 @@
   border: none;
   outline: none;
   -webkit-tap-highlight-color: transparent;
+  box-shadow: none;
+  padding: 0;
+}
+
+.button:hover {
+  transform: none;
+  filter: none;
 }

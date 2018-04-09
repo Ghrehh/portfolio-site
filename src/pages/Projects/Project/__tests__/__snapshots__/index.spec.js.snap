@@ -5,6 +5,7 @@ exports[`Project renders the component correctly 1`] = `
   className="project"
 >
   <LinkButton
+    external={false}
     link="/projects/undefined"
   >
     <div

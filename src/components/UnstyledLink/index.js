@@ -6,15 +6,35 @@ import styles from './styles.module.css';
 
 type Props = {
   children: React.Node,
-  link: string
+  link: string,
+  external: boolean
 };
 
 const scrollToTop = () => window.scrollTo(0, 0);
 
-const LinkButton = (props: Props) => (
-  <Link to={props.link} onClick={scrollToTop} className={styles.link}>
-    {props.children}
-  </Link>
-);
+const LinkButton = (props: Props) => {
+  if (props.external) {
+    return (
+      <a
+        target="_blank"
+        href={props.link}
+        onClick={scrollToTop}
+        className={styles.link}
+      >
+        {props.children}
+      </a>
+    );
+  }
+
+  return (
+    <Link to={props.link} onClick={scrollToTop} className={styles.link}>
+      {props.children}
+    </Link>
+  );
+};
+
+LinkButton.defaultProps = {
+  external: false
+};
 
 export default LinkButton;

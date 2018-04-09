@@ -2,25 +2,62 @@
 
 exports[`Project renders the component correctly 1`] = `
 <Page
+  className="page"
   style={
     Object {
       "backgroundColor": "red",
     }
   }
 >
+  <div
+    className="closeButtonContainer"
+  >
+    <TransparentButton>
+      <LinkButton
+        external={false}
+        link="/projects"
+      >
+        <span
+          className="closeButton"
+        >
+          ×
+        </span>
+      </LinkButton>
+    </TransparentButton>
+  </div>
   <PageHeading
     className="title"
   >
     foo
   </PageHeading>
-  <div
-    className="buttonContainer"
+  <section
+    className="description"
   >
-    <LinkButton
-      link="/projects"
+    <SectionHeading>
+      Description
+    </SectionHeading>
+    <p
+      className="body"
     >
-      ⇦ Return
-    </LinkButton>
-  </div>
+      bar
+    </p>
+  </section>
+  <section
+    className="links"
+  >
+    <SectionHeading>
+      Links
+    </SectionHeading>
+    <ButtonContainer
+      className="linkButtonContainer"
+    >
+      <LinkButton
+        external={true}
+        link={undefined}
+      >
+        GitHub
+      </LinkButton>
+    </ButtonContainer>
+  </section>
 </Page>
 `;

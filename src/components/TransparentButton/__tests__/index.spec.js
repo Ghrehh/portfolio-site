@@ -10,7 +10,7 @@ describe('TransparentButton', () => {
     testContext = {};
 
     const component = (
-      <TransparentButton className="foo">FooBarBaz</TransparentButton>
+      <TransparentButton onClick={() => {}} className="foo">FooBarBaz</TransparentButton>
     );
 
     testContext.renderer = new ShallowRenderer();

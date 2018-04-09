@@ -1,4 +1,38 @@
-.buttonContainer {
+.page {
+  padding-top: 0;
+}
+
+.closeButtonContainer {
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+.closeButton {
+  color: var(--charcoal);
+  font-size: 50px;
+  padding-right: 13px;
+  transition: filter 0.5s;
+}
+
+.closeButton:hover {
+  filter: brightness(1.5);
+}
+
+.body {
   text-align: center;
+}
+
+.description {
   margin-bottom: 40px;
+  max-width: 500px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.links {
+  margin-bottom: 40px;
+}
+
+.linkButtonContainer {
+  text-align: center;
 }

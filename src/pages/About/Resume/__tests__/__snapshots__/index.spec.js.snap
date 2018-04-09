@@ -2,9 +2,7 @@
 
 exports[`Resume renders the component correctly 1`] = `
 <Card>
-  <SectionHeading
-    className="heading"
-  >
+  <SectionHeading>
     CV/RESUME
   </SectionHeading>
   <p

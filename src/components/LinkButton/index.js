@@ -7,11 +7,12 @@ import UnstyledLink from 'components/UnstyledLink';
 type Props = {
   className?: string,
   children: React.Node,
-  link: string
+  link: string,
+  external?: boolean
 };
 
 const LinkButton = (props: Props) => (
-  <UnstyledLink link={props.link}>
+  <UnstyledLink link={props.link} external={props.external}>
     <Button className={props.className}>{props.children}</Button>
   </UnstyledLink>
 );

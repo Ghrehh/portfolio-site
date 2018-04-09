@@ -2,6 +2,7 @@
 
 exports[`LinkButton rendering renders the component correctly 1`] = `
 <LinkButton
+  external={false}
   link="./page"
 >
   <Button

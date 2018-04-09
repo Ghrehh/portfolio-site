@@ -20,6 +20,7 @@
   border-radius: 3px;
   background-color: white;
   text-align: center;
+  box-shadow: var(--box-shadow);
 }
 
 .projectName {

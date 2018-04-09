@@ -1,9 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`TransparentButton renders the component correctly 1`] = `
-<button
+<Button
   className="button"
+  onClick={[Function]}
 >
   FooBarBaz
-</button>
+</Button>
 `;
