@@ -6,6 +6,7 @@ import * as pathConstants from 'constants/paths';
 import Page from 'components/Page';
 import PageHeading from 'components/PageHeading';
 import LinkButton from 'components/LinkButton';
+import FadeIn from 'components/FadeIn';
 import Project from './Project';
 
 import styles from './styles.module.css';
@@ -19,14 +20,16 @@ class Projects extends React.Component<{ projects: projectsModel.Type }> {
 
   render() {
     return (
-      <Page>
-        <PageHeading className={styles.title}>PROJECTS</PageHeading>
-        <div className={styles.buttonContainer}>
-          <LinkButton link={pathConstants.ABOUT}>⇦ Return</LinkButton>
-        </div>
+      <FadeIn timeout={0}>
+        <Page>
+          <PageHeading className={styles.title}>PROJECTS</PageHeading>
+          <div className={styles.buttonContainer}>
+            <LinkButton link={pathConstants.ABOUT}>⇦ Return</LinkButton>
+          </div>
 
-        {this.renderProjects()}
-      </Page>
+          {this.renderProjects()}
+        </Page>
+      </FadeIn>
     );
   }
 }
