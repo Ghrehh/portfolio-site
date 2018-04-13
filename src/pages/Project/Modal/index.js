@@ -6,7 +6,7 @@ import Page from 'components/Page';
 import PageHeading from 'components/PageHeading';
 import TransparentButton from 'components/TransparentButton';
 import UnstyledLink from 'components/UnstyledLink';
-import SlideUp from 'components/SlideUp';
+import SlideUp from 'components/animation/SlideUp';
 
 import styles from './styles.module.css';
 

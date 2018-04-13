@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`About renders the component correctly 1`] = `
-<Transition
+<FadeIn
   timeout={0}
 >
   <Page>
@@ -27,5 +27,5 @@ exports[`About renders the component correctly 1`] = `
     <Portfolio />
     <Resume />
   </Page>
-</Transition>
+</FadeIn>
 `;
