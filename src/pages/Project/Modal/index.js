@@ -3,7 +3,7 @@ import * as React from 'react';
 
 import * as pathConstants from 'constants/paths';
 import Page from 'components/Page';
-import PageHeading from 'components/PageHeading';
+import PageHeading from 'components/text/PageHeading';
 import TransparentButton from 'components/TransparentButton';
 import UnstyledLink from 'components/UnstyledLink';
 import SlideUp from 'components/animation/SlideUp';

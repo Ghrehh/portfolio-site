@@ -4,7 +4,7 @@ import React from 'react';
 import * as projectsModel from 'models/data/projects';
 import * as pathConstants from 'constants/paths';
 import Page from 'components/Page';
-import PageHeading from 'components/PageHeading';
+import PageHeading from 'components/text/PageHeading';
 import LinkButton from 'components/LinkButton';
 import FadeIn from 'components/animation/FadeIn';
 import Project from './Project';

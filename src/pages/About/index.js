@@ -2,7 +2,7 @@
 import React from 'react';
 
 import Page from 'components/Page';
-import PageHeading from 'components/PageHeading';
+import PageHeading from 'components/text/PageHeading';
 import FadeIn from 'components/animation/FadeIn';
 import Portfolio from './Portfolio';
 import Resume from './Resume';

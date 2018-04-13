@@ -6,7 +6,7 @@ import Page from 'components/Page';
 import Card from 'components/Card';
 import Button from 'components/Button';
 import ButtonContainer from 'components/ButtonContainer';
-import PageHeading from 'components/PageHeading';
+import PageHeading from 'components/text/PageHeading';
 import SectionHeading from 'components/SectionHeading';
 
 import 'reset-css';
