@@ -1,7 +1,7 @@
 // @flow
 import React from 'react';
 
-import SectionHeading from 'components/SectionHeading';
+import SectionHeading from 'components/text/SectionHeading';
 import Button from 'components/Button';
 import LinkButton from 'components/LinkButton';
 import ButtonContainer from 'components/ButtonContainer';

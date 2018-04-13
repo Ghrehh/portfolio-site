@@ -70,6 +70,10 @@
 }
 
 @media (max-width: 450px) {
+  .heading {
+    text-align: center;
+  }
+
   .twitterButton, .emailButton {
     display: block;
     margin-right: auto;

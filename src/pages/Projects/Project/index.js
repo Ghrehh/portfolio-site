@@ -3,7 +3,7 @@ import React from 'react';
 
 import * as projectModel from 'models/data/project';
 import * as pathConstants from 'constants/paths';
-import SectionHeading from 'components/SectionHeading';
+import SectionHeading from 'components/text/SectionHeading';
 import UnstyledLink from 'components/UnstyledLink';
 
 import styles from './styles.module.css';

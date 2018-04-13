@@ -38,7 +38,7 @@
   color: white;
 }
 
-@media (max-width: 530px) {
+@media (max-width: 520px) {
   .projectOuter {
     margin: 0;
   }

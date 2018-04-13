@@ -35,6 +35,11 @@
 }
 
 @media (max-width: 500px) {
+  .heading {
+    color: var(--orange);
+    text-align: center;
+  }
+
   .display {
     text-align: center;
   }

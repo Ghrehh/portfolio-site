@@ -2,7 +2,7 @@
 import React from 'react';
 
 import Card from 'components/Card';
-import SectionHeading from 'components/SectionHeading';
+import SectionHeading from 'components/text/SectionHeading';
 import ButtonContainer from 'components/ButtonContainer';
 import Button from 'components/Button';
 import styles from './styles.module.css';
