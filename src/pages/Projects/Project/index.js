@@ -14,16 +14,19 @@ type Props = {
 };
 
 const Project = (props: Props) => (
-  <div className={styles.project}>
+  <div className={styles.projectOuter}>
     <UnstyledLink link={`${pathConstants.PROJECTS}/${props.path}`}>
       <div
         style={{ backgroundColor: props.project.backgroundColor }}
-        className={styles.projectInner}
+        className={styles.project}
       >
-        <SectionHeading className={styles.projectName}>
-          {props.project.name}
-        </SectionHeading>
-        <p className={styles.projectBody}>{props.project.description}</p>
+        <div className={styles.projectInner}>
+          <SectionHeading className={styles.projectName}>
+            {props.project.name}
+          </SectionHeading>
+
+          <p className={styles.projectBody}>{props.project.description}</p>
+        </div>
       </div>
     </UnstyledLink>
   </div>

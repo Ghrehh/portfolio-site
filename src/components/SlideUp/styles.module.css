@@ -1,0 +1,10 @@
+.slideUp {
+  opacity: 0;
+  transform: translate(0, 40px);
+}
+
+.slideUpFinished {
+  transform: translate(0, 0);
+  opacity: 1;
+  transition: opacity 0.4s, transform 0.4s;
+}

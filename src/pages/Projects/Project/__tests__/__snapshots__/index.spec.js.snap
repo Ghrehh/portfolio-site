@@ -2,30 +2,35 @@
 
 exports[`Project renders the component correctly 1`] = `
 <div
-  className="project"
+  className="projectOuter"
 >
   <LinkButton
     external={false}
     link="/projects/undefined"
+    scrollToTop={true}
   >
     <div
-      className="projectInner"
+      className="project"
       style={
         Object {
           "backgroundColor": "red",
         }
       }
     >
-      <SectionHeading
-        className="projectName"
+      <div
+        className="projectInner"
       >
-        foo
-      </SectionHeading>
-      <p
-        className="projectBody"
-      >
-        bar
-      </p>
+        <SectionHeading
+          className="projectName"
+        >
+          foo
+        </SectionHeading>
+        <p
+          className="projectBody"
+        >
+          bar
+        </p>
+      </div>
     </div>
   </LinkButton>
 </div>

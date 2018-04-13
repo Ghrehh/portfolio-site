@@ -7,10 +7,13 @@ import styles from './styles.module.css';
 type Props = {
   children: React.Node,
   link: string,
-  external: boolean
+  external: boolean,
+  scrollToTop: boolean
 };
 
-const scrollToTop = () => window.scrollTo(0, 0);
+function scrollToTop() {
+  if (this.scrollToTop) window.scrollTo(0, 0);
+}
 
 const LinkButton = (props: Props) => {
   if (props.external) {
@@ -27,14 +30,19 @@ const LinkButton = (props: Props) => {
   }
 
   return (
-    <Link to={props.link} onClick={scrollToTop} className={styles.link}>
+    <Link
+      to={props.link}
+      onClick={scrollToTop.bind(props)}
+      className={styles.link}
+    >
       {props.children}
     </Link>
   );
 };
 
 LinkButton.defaultProps = {
-  external: false
+  external: false,
+  scrollToTop: true
 };
 
 export default LinkButton;

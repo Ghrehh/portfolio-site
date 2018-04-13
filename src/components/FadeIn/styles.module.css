@@ -6,3 +6,7 @@
   opacity: 1;
   transition: opacity 0.2s, transform 1.2s;
 }
+
+.fadeInExit {
+  opacity: 0;
+}

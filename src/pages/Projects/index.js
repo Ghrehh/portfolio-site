@@ -20,11 +20,17 @@ class Projects extends React.Component<{ projects: projectsModel.Type }> {
 
   render() {
     return (
-      <FadeIn timeout={0}>
+      <FadeIn>
         <Page>
-          <PageHeading className={styles.title}>PROJECTS</PageHeading>
+          <header className={styles.header}>
+            <PageHeading className={styles.title}>PROJECTS</PageHeading>
+            <p className={styles.headerBody}>
+              See below for a selection of my open-source projects. Click on a
+              project for more information.
+            </p>
+          </header>
           <div className={styles.buttonContainer}>
-            <LinkButton link={pathConstants.ABOUT}>⇦ Return</LinkButton>
+            <LinkButton link={pathConstants.ABOUT}>Back</LinkButton>
           </div>
 
           {this.renderProjects()}

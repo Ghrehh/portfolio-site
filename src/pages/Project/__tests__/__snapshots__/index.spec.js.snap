@@ -1,35 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Project renders the component correctly 1`] = `
-<Page
-  className="page"
-  style={
-    Object {
-      "backgroundColor": "red",
-    }
-  }
+<Modal
+  backgroundColor="red"
+  heading="foo"
 >
-  <div
-    className="closeButtonContainer"
-  >
-    <TransparentButton>
-      <LinkButton
-        external={false}
-        link="/projects"
-      >
-        <span
-          className="closeButton"
-        >
-          ×
-        </span>
-      </LinkButton>
-    </TransparentButton>
-  </div>
-  <PageHeading
-    className="title"
-  >
-    foo
-  </PageHeading>
   <section
     className="description"
   >
@@ -59,5 +34,5 @@ exports[`Project renders the component correctly 1`] = `
       </LinkButton>
     </ButtonContainer>
   </section>
-</Page>
+</Modal>
 `;

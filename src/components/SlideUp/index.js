@@ -13,9 +13,8 @@ const Transition = (props: Props) => (
   <CSSTransition
     timeout={props.timeout}
     classNames={{
-      appear: styles.slideDown,
-      enterDone: styles.slideDownFinished,
-      exitActive: styles.fadeInExit
+      appear: styles.slideUp,
+      enterDone: styles.slideUpFinished
     }}
     in={true}
     appear={true}

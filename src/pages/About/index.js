@@ -10,9 +10,9 @@ import Resume from './Resume';
 import styles from './styles.module.css';
 
 const About = () => (
-  <FadeIn timeout={0}>
+  <FadeIn>
     <Page>
-      <section className={styles.intro}>
+      <header className={styles.header}>
         <PageHeading className={styles.heading}>
           HEY, I'M GERARD BURNS
         </PageHeading>
@@ -23,7 +23,7 @@ const About = () => (
           with experience working with both front-end and back-end technologies,
           primarily React, Ruby on Rails, Django and Vue.
         </p>
-      </section>
+      </header>
 
       <Portfolio />
       <Resume />

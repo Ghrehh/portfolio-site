@@ -1,6 +1,20 @@
+.header {
+  padding: 0 20px;
+}
+
 .title {
   color: var(--red);
-  margin-bottom: 55px;
+  margin-bottom: 16px;
+}
+
+.headerBody {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 100;
+  line-height: 30px;
+  max-width: 470px;
+  margin: 0 auto 31px;
+  color: var(--blue);
 }
 
 .buttonContainer {

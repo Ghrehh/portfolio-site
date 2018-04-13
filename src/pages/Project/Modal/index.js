@@ -6,7 +6,7 @@ import Page from 'components/Page';
 import PageHeading from 'components/PageHeading';
 import TransparentButton from 'components/TransparentButton';
 import UnstyledLink from 'components/UnstyledLink';
-import FadeIn from 'components/FadeIn';
+import SlideUp from 'components/SlideUp';
 
 import styles from './styles.module.css';
 
@@ -17,7 +17,7 @@ type Props = {
 };
 
 const Modal = (props: Props) => (
-  <FadeIn timeout={0}>
+  <SlideUp>
     <Page
       className={styles.page}
       style={{ backgroundColor: props.backgroundColor }}
@@ -35,7 +35,7 @@ const Modal = (props: Props) => (
 
       {props.children}
     </Page>
-  </FadeIn>
+  </SlideUp>
 );
 
 export default Modal;
