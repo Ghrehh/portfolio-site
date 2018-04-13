@@ -9,7 +9,7 @@ type Props = {
   children: React.Node
 };
 
-const Transition = (props: Props) => (
+const SlideUp = (props: Props) => (
   <CSSTransition
     timeout={props.timeout}
     classNames={{
@@ -23,8 +23,8 @@ const Transition = (props: Props) => (
   </CSSTransition>
 );
 
-Transition.defaultProps = {
+SlideUp.defaultProps = {
   timeout: 0
 };
 
-export default Transition;
+export default SlideUp;
