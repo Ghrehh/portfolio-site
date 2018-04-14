@@ -4,7 +4,7 @@ import { storiesOf } from '@storybook/react';
 
 import Page from 'components/Page';
 import Card from 'components/Card';
-import Button from 'components/Button';
+import Button from 'components/buttons/Standard';
 import ButtonContainer from 'components/ButtonContainer';
 import PageHeading from 'components/text/PageHeading';
 import SectionHeading from 'components/text/SectionHeading';
