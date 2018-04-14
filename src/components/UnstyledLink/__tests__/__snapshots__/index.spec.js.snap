@@ -3,7 +3,6 @@
 exports[`UnstyledLink rendering renders the component correctly 1`] = `
 <div
   className="link"
-  onClick={[Function]}
   to="./page"
 >
   Foo

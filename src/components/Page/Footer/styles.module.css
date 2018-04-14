@@ -41,47 +41,35 @@
 }
 
 .twitterButton {
-  width: 150px;
   text-align: center;
   margin-right: 10px;
   background-color: var(--blue);
 }
 
 .emailButton {
-  width: 150px;
   text-align: center;
+  margin-right: 10px;
   background-color: var(--red);
 }
 
-@media (max-width: 708px) {
-  .footerInner {
-    justify-content: center;
-  }
-
-  .textContainer {
-    margin-right: 20px;
-  }
-
-  .twitterButton {
-    display: block;
-    margin-right: 0;
-    margin-bottom: 10px;
-  }
+.linkedInButton {
+  text-align: center;
+  background-color: var(--green);
 }
 
-@media (max-width: 450px) {
+@media (max-width: 715px) {
+  .footerInner {
+    display: block;
+  }
+
   .heading {
     text-align: center;
   }
 
-  .twitterButton, .emailButton {
+  .twitterButton, .emailButton, .linkedInButton {
     display: block;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-  .footerInner {
-    display: block;
+    margin: 0 auto 10px;
+    width: 150px;
   }
 
   .textContainer {

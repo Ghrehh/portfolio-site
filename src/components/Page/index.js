@@ -1,6 +1,7 @@
 // @flow
 import * as React from 'react';
 
+import ScrollToTop from 'components/ScrollToTop';
 import Footer from './Footer';
 import combineClass from 'utils/combine-class';
 import styles from './styles.module.css';
@@ -16,13 +17,17 @@ const renderFooter = displayFooter =>
   displayFooter === false ? null : <Footer />;
 
 const Page = (props: Props) => (
-  <div
-    style={props.style}
-    className={combineClass(styles.page, props.className)}
-  >
-    <main className={styles.main}>{props.children}</main>
-    {renderFooter(props.displayFooter)}
-  </div>
+  <React.Fragment>
+    <ScrollToTop />
+
+    <div
+      style={props.style}
+      className={combineClass(styles.page, props.className)}
+    >
+      <main className={styles.main}>{props.children}</main>
+      {renderFooter(props.displayFooter)}
+    </div>
+  </React.Fragment>
 );
 
 export default Page;

@@ -36,6 +36,11 @@ exports[`Footer renders the component correctly 1`] = `
         >
           Email
         </Button>
+        <Button
+          className="linkedInButton"
+        >
+          LinkedIn
+        </Button>
       </div>
     </div>
   </footer>

@@ -1,21 +1,24 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Page renders the component correctly 1`] = `
-<div
-  className="page"
-  style={
-    Object {
-      "backgroundColor": "blue",
+<Unknown>
+  <ScrollToTop />
+  <div
+    className="page"
+    style={
+      Object {
+        "backgroundColor": "blue",
+      }
     }
-  }
->
-  <main
-    className="main"
   >
-    <p>
-      foo
-    </p>
-  </main>
-  <Footer />
-</div>
+    <main
+      className="main"
+    >
+      <p>
+        foo
+      </p>
+    </main>
+    <Footer />
+  </div>
+</Unknown>
 `;

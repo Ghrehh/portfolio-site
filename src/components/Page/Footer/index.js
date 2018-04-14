@@ -20,6 +20,7 @@ const Footer = () => (
         <div>
           <Button className={styles.twitterButton}>Twitter</Button>
           <Button className={styles.emailButton}>Email</Button>
+          <Button className={styles.linkedInButton}>LinkedIn</Button>
         </div>
       </div>
     </footer>

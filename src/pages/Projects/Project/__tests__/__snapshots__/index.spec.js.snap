@@ -7,7 +7,6 @@ exports[`Project renders the component correctly 1`] = `
   <LinkButton
     external={false}
     link="/projects/undefined"
-    scrollToTop={true}
   >
     <div
       className="project"

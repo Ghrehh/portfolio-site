@@ -1,6 +1,5 @@
 .button {
   box-sizing: border-box;
-  outline: none;
   -webkit-tap-highlight-color: transparent;
   background-color: var(--charcoal);
   box-shadow: var(--box-shadow);
