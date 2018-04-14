@@ -17,25 +17,27 @@ type Props = {
 };
 
 const Modal = (props: Props) => (
-  <SlideUp>
-    <Page
-      className={styles.page}
-      style={{ backgroundColor: props.backgroundColor }}
-      displayFooter={false}
-    >
-      <div className={styles.closeButtonContainer}>
-        <TransparentButton>
-          <UnstyledLink link={pathConstants.PROJECTS}>
-            <span className={styles.closeButton}>×</span>
-          </UnstyledLink>
-        </TransparentButton>
+  <Page
+    className={styles.page}
+    style={{ backgroundColor: props.backgroundColor }}
+    displayFooter={false}
+  >
+    <SlideUp>
+      <div>
+        <div className={styles.closeButtonContainer}>
+          <TransparentButton>
+            <UnstyledLink link={pathConstants.PROJECTS}>
+              <span className={styles.closeButton}>×</span>
+            </UnstyledLink>
+          </TransparentButton>
+        </div>
+
+        <PageHeading className={styles.title}>{props.heading}</PageHeading>
+
+        {props.children}
       </div>
-
-      <PageHeading className={styles.title}>{props.heading}</PageHeading>
-
-      {props.children}
-    </Page>
-  </SlideUp>
+    </SlideUp>
+  </Page>
 );
 
 export default Modal;
