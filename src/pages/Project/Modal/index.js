@@ -4,7 +4,6 @@ import * as React from 'react';
 import * as pathConstants from 'constants/paths';
 import Page from 'components/Page';
 import PageHeading from 'components/text/PageHeading';
-import TransparentButton from 'components/TransparentButton';
 import UnstyledLink from 'components/UnstyledLink';
 import SlideUp from 'components/animation/SlideUp';
 
@@ -25,11 +24,9 @@ const Modal = (props: Props) => (
     <SlideUp>
       <div>
         <div className={styles.closeButtonContainer}>
-          <TransparentButton>
-            <UnstyledLink link={pathConstants.PROJECTS}>
-              <span className={styles.closeButton}>×</span>
-            </UnstyledLink>
-          </TransparentButton>
+          <UnstyledLink link={pathConstants.PROJECTS}>
+            <span className={styles.closeButton}>×</span>
+          </UnstyledLink>
         </div>
 
         <PageHeading className={styles.title}>{props.heading}</PageHeading>

@@ -5,12 +5,14 @@
 .closeButtonContainer {
   text-align: right;
   margin-bottom: 10px;
+  padding-top: 4px;
 }
 
 .closeButton {
   color: var(--charcoal);
   font-size: 50px;
   transition: filter 0.5s;
+  font-weight: 600;
 }
 
 .closeButton:hover {
