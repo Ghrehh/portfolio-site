@@ -2,14 +2,14 @@
 export default {
   tags: {},
   projects: {
-    'tweetatlas-client': {
-      name: 'TWEETATLAS CLIENT',
-      description: 'Client used to display data from the Tweetatlas Server',
+    'tweet-atlas-client': {
+      name: 'TWEET ATLAS CLIENT',
+      description: 'Client used to display data from the Tweet Atlas Server',
       backgroundColor: 'var(--green)',
       gitHubLink: 'https://github.com/Ghrehh/tweetatlas-client'
     },
-    'tweetatlas-server': {
-      name: 'TWEETATLAS SERVER',
+    'tweet-atlas-server': {
+      name: 'TWEET ATLAS SERVER',
       description:
         'Service used to estimate the location of users creating tweets container a search phrase',
       backgroundColor: 'var(--yellow)',

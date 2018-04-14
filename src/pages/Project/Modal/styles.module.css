@@ -1,5 +1,5 @@
 .page {
-  padding-top: 0;
+  padding: 0 20px;
 }
 
 .closeButtonContainer {
@@ -10,7 +10,6 @@
 .closeButton {
   color: var(--charcoal);
   font-size: 50px;
-  padding-right: 13px;
   transition: filter 0.5s;
 }
 
