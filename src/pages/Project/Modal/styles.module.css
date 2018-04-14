@@ -18,3 +18,9 @@
 .closeButton:hover {
   filter: brightness(1.5);
 }
+
+@media (max-width: 380px) {
+  .title {
+    font-size: 35px;
+  }
+}
