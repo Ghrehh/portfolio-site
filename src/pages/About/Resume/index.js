@@ -4,7 +4,7 @@ import React from 'react';
 import Card from 'components/Card';
 import SectionHeading from 'components/text/SectionHeading';
 import ButtonContainer from 'components/ButtonContainer';
-import Button from 'components/Button';
+import LinkButton from 'components/buttons/Link';
 import styles from './styles.module.css';
 
 const Resume = () => (
@@ -16,9 +16,13 @@ const Resume = () => (
     </p>
 
     <ButtonContainer className={styles.buttonContainer}>
-      <Button className={styles.viewButton}>View CV</Button>
+      <LinkButton className={styles.viewButton} link="" external={true}>
+        View CV
+      </LinkButton>
 
-      <Button className={styles.downloadButton}>Download CV</Button>
+      <LinkButton className={styles.downloadButton} link="" external={true}>
+        Download CV
+      </LinkButton>
     </ButtonContainer>
   </Card>
 );

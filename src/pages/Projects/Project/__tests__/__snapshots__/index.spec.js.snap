@@ -4,7 +4,7 @@ exports[`Project renders the component correctly 1`] = `
 <div
   className="projectOuter"
 >
-  <LinkButton
+  <UnstyledLink
     external={false}
     link="/projects/undefined"
   >
@@ -31,6 +31,6 @@ exports[`Project renders the component correctly 1`] = `
         </p>
       </div>
     </div>
-  </LinkButton>
+  </UnstyledLink>
 </div>
 `;

@@ -13,16 +13,20 @@ exports[`Resume renders the component correctly 1`] = `
   <ButtonContainer
     className="buttonContainer"
   >
-    <Button
+    <LinkButton
       className="viewButton"
+      external={true}
+      link=""
     >
       View CV
-    </Button>
-    <Button
+    </LinkButton>
+    <LinkButton
       className="downloadButton"
+      external={true}
+      link=""
     >
       Download CV
-    </Button>
+    </LinkButton>
   </ButtonContainer>
 </Card>
 `;

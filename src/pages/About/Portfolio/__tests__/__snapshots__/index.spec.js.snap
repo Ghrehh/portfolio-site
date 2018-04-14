@@ -23,11 +23,13 @@ exports[`Portfolio renders the component correctly 1`] = `
       >
         View Portfolio
       </LinkButton>
-      <Button
+      <LinkButton
         className="gitHubButton"
+        external={true}
+        link="https://github.com/ghrehh"
       >
         GitHub
-      </Button>
+      </LinkButton>
     </ButtonContainer>
   </div>
 </section>

@@ -4,7 +4,7 @@ import React from 'react';
 import * as projectsModel from 'models/data/projects';
 import * as projectRouterParams from 'models/project-router-params';
 import SectionHeading from 'components/text/SectionHeading';
-import LinkButton from 'components/LinkButton';
+import LinkButton from 'components/buttons/Link';
 import ButtonContainer from 'components/ButtonContainer';
 import Modal from './Modal';
 

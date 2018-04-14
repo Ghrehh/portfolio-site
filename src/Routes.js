@@ -1,6 +1,7 @@
 // @flow
 import * as React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { Route } from 'react-router-dom';
+import { MemoryRouter as Router } from 'react-router';
 
 import data from './data';
 import * as projectRouterParams from 'models/project-router-params';
@@ -10,9 +11,7 @@ import Project from 'pages/Project';
 import About from 'pages/About';
 
 class Routes extends React.Component<{}> {
-  renderProjects = ({ match }: { match: projectRouterParams.Type }) => (
-    <Projects match={match} projects={data.projects} />
-  );
+  renderProjects = () => <Projects projects={data.projects} />;
 
   renderProject = ({ match }: { match: projectRouterParams.Type }) => (
     <Project match={match} projects={data.projects} />

@@ -2,7 +2,7 @@
 import * as React from 'react';
 
 import SectionHeading from 'components/text/SectionHeading';
-import Button from 'components/Button';
+import LinkButton from 'components/buttons/Link';
 
 import styles from './styles.module.css';
 
@@ -18,9 +18,29 @@ const Footer = () => (
         </div>
 
         <div>
-          <Button className={styles.twitterButton}>Twitter</Button>
-          <Button className={styles.emailButton}>Email</Button>
-          <Button className={styles.linkedInButton}>LinkedIn</Button>
+          <LinkButton
+            className={styles.twitterButton}
+            link="https://twitter.com/ghrehh"
+            external={true}
+          >
+            Twitter
+          </LinkButton>
+
+          <LinkButton
+            className={styles.emailButton}
+            link="mailto:ghrehh@gmail.com"
+            external={true}
+          >
+            Email
+          </LinkButton>
+
+          <LinkButton
+            className={styles.linkedInButton}
+            link="https://www.linkedin.com/in/gerard-burns-0b4864104/"
+            external={true}
+          >
+            LinkedIn
+          </LinkButton>
         </div>
       </div>
     </footer>

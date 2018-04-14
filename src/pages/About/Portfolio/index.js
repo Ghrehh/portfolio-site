@@ -2,8 +2,7 @@
 import React from 'react';
 
 import SectionHeading from 'components/text/SectionHeading';
-import Button from 'components/Button';
-import LinkButton from 'components/LinkButton';
+import LinkButton from 'components/buttons/Link';
 import ButtonContainer from 'components/ButtonContainer';
 import * as pathConstants from 'constants/paths';
 import styles from './styles.module.css';
@@ -20,7 +19,13 @@ const Portfolio = () => (
 
       <ButtonContainer>
         <LinkButton link={pathConstants.PROJECTS}>View Portfolio</LinkButton>
-        <Button className={styles.gitHubButton}>GitHub</Button>
+        <LinkButton
+          className={styles.gitHubButton}
+          link="https://github.com/ghrehh"
+          external={true}
+        >
+          GitHub
+        </LinkButton>
       </ButtonContainer>
     </div>
   </section>

@@ -5,7 +5,7 @@ import * as projectsModel from 'models/data/projects';
 import * as pathConstants from 'constants/paths';
 import Page from 'components/Page';
 import PageHeading from 'components/text/PageHeading';
-import LinkButton from 'components/LinkButton';
+import LinkButton from 'components/buttons/Link';
 import FadeIn from 'components/animation/FadeIn';
 import Project from './Project';
 

@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`LinkButton rendering renders the component correctly 1`] = `
-<LinkButton
+<UnstyledLink
   external={false}
   link="./page"
 >
@@ -10,5 +10,5 @@ exports[`LinkButton rendering renders the component correctly 1`] = `
   >
     Foo
   </Button>
-</LinkButton>
+</UnstyledLink>
 `;

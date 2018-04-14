@@ -1,0 +1,20 @@
+.button {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  background-color: var(--charcoal);
+  box-shadow: var(--box-shadow);
+  cursor: pointer;
+  color: white;
+  border: none;
+  padding: 12px 15px;
+  border-radius: 3px;
+  font-size: 18px;
+  font-weight: 600;
+  transition: transform 0.5s, filter 0.5s;
+  display: inline-block;
+}
+
+.button:hover {
+  transform: translate(0, -3px);
+  filter: brightness(1.3);
+}
