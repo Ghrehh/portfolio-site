@@ -3,7 +3,7 @@ import React from 'react';
 
 import SectionHeading from 'components/text/SectionHeading';
 import LinkButton from 'components/buttons/Link';
-import ButtonContainer from 'components/ButtonContainer';
+import ButtonContainer from 'components/buttons/Container';
 import * as pathConstants from 'constants/paths';
 import styles from './styles.module.css';
 

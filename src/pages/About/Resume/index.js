@@ -3,7 +3,7 @@ import React from 'react';
 
 import Card from 'components/Card';
 import SectionHeading from 'components/text/SectionHeading';
-import ButtonContainer from 'components/ButtonContainer';
+import ButtonContainer from 'components/buttons/Container';
 import LinkButton from 'components/buttons/Link';
 import styles from './styles.module.css';
 
