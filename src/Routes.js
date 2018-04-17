@@ -1,7 +1,6 @@
 // @flow
 import * as React from 'react';
-import { Route } from 'react-router-dom';
-import { MemoryRouter as Router } from 'react-router';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import data from './data';
 import * as projectRouterParams from 'models/project-router-params';

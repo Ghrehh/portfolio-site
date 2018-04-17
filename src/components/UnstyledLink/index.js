@@ -9,7 +9,8 @@ type Props = {
   children: React.Node,
   link: string,
   external: boolean,
-  className?: string
+  className?: string,
+  download: boolean
 };
 
 const UnstyledLink = (props: Props) => {
@@ -17,7 +18,12 @@ const UnstyledLink = (props: Props) => {
 
   if (props.external) {
     return (
-      <a target="_blank" href={props.link} className={className}>
+      <a
+        target="_blank"
+        href={props.link}
+        className={className}
+        download={props.download}
+      >
         {props.children}
       </a>
     );
@@ -32,7 +38,8 @@ const UnstyledLink = (props: Props) => {
 
 UnstyledLink.defaultProps = {
   external: false,
-  link: ''
+  link: '',
+  download: false
 };
 
 export default UnstyledLink;

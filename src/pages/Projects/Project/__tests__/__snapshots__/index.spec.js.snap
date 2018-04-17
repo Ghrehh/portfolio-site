@@ -5,10 +5,11 @@ exports[`Project renders the component correctly 1`] = `
   className="projectOuter"
 >
   <UnstyledLink
+    download={false}
     external={false}
     link="/projects/undefined"
   >
-    <div
+    <section
       className="project"
       style={
         Object {
@@ -30,7 +31,7 @@ exports[`Project renders the component correctly 1`] = `
           bar
         </p>
       </div>
-    </div>
+    </section>
   </UnstyledLink>
 </div>
 `;

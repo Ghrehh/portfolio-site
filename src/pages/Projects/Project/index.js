@@ -16,7 +16,7 @@ type Props = {
 const Project = (props: Props) => (
   <div className={styles.projectOuter}>
     <UnstyledLink link={`${pathConstants.PROJECTS}/${props.path}`}>
-      <div
+      <section
         style={{ backgroundColor: props.project.backgroundColor }}
         className={styles.project}
       >
@@ -27,7 +27,7 @@ const Project = (props: Props) => (
 
           <p className={styles.projectBody}>{props.project.description}</p>
         </div>
-      </div>
+      </section>
     </UnstyledLink>
   </div>
 );

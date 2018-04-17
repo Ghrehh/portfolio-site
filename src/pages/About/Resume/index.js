@@ -16,11 +16,20 @@ const Resume = () => (
     </p>
 
     <ButtonContainer className={styles.buttonContainer}>
-      <LinkButton className={styles.viewButton} link="" external={true}>
+      <LinkButton
+        className={styles.viewButton}
+        external={true}
+        link="/Gerard Burns CV.pdf"
+      >
         View CV
       </LinkButton>
 
-      <LinkButton className={styles.downloadButton} link="" external={true}>
+      <LinkButton
+        className={styles.downloadButton}
+        external={true}
+        link="/Gerard Burns CV.pdf"
+        download={true}
+      >
         Download CV
       </LinkButton>
     </ButtonContainer>

@@ -16,14 +16,15 @@ exports[`Resume renders the component correctly 1`] = `
     <LinkButton
       className="viewButton"
       external={true}
-      link=""
+      link="/Gerard Burns CV.pdf"
     >
       View CV
     </LinkButton>
     <LinkButton
       className="downloadButton"
+      download={true}
       external={true}
-      link=""
+      link="/Gerard Burns CV.pdf"
     >
       Download CV
     </LinkButton>
