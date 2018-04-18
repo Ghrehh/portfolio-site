@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom';
 
 import 'reset-css';
 import './index.css';
-import Routes from './Routes';
+import Router from './Router';
 import serviceWorker from './registerServiceWorker';
 
-ReactDOM.render(<Routes />, document.getElementById('root'));
+ReactDOM.render(<Router />, document.getElementById('root'));
 serviceWorker();

@@ -1,6 +1,6 @@
 // @flow
 import * as React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter, Route } from 'react-router-dom';
 
 import data from './data';
 import * as projectRouterParams from 'models/project-router-params';
@@ -9,7 +9,7 @@ import Projects from 'pages/Projects';
 import Project from 'pages/Project';
 import About from 'pages/About';
 
-class Routes extends React.Component<{}> {
+class Router extends React.Component<{}> {
   renderProjects = () => <Projects projects={data.projects} />;
 
   renderProject = ({ match }: { match: projectRouterParams.Type }) => (
@@ -17,7 +17,7 @@ class Routes extends React.Component<{}> {
   );
 
   render = () => (
-    <Router>
+    <BrowserRouter>
       <React.Fragment>
         <Route exact path={pathConstants.ABOUT} component={About} />
         <Route
@@ -31,8 +31,8 @@ class Routes extends React.Component<{}> {
           render={this.renderProject}
         />
       </React.Fragment>
-    </Router>
+    </BrowserRouter>
   );
 }
 
-export default Routes;
+export default Router;
