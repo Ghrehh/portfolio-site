@@ -42,7 +42,7 @@ export default {
     'portfolio-website': {
       name: 'PORTFOLIO WEBSITE',
       description:
-      'The website you\'re currently viewing. Built using Create React App.',
+        "The website you're currently viewing. Built using Create React App.",
       backgroundColor: 'var(--green)',
       gitHubLink: 'https://github.com/Ghrehh/portfolio-site'
     }
