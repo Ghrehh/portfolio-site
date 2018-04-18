@@ -38,6 +38,13 @@ export default {
         'A Vue.js library for displaying heat map style data per country on a world map.',
       backgroundColor: 'var(--blue)',
       gitHubLink: 'https://github.com/Ghrehh/vue-world-map'
+    },
+    'portfolio-website': {
+      name: 'PORTFOLIO WEBSITE',
+      description:
+      'The website you\'re currently viewing. Built using Create React App.',
+      backgroundColor: 'var(--green)',
+      gitHubLink: 'https://github.com/Ghrehh/portfolio-site'
     }
   }
 };
