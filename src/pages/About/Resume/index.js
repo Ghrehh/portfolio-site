@@ -19,7 +19,7 @@ const Resume = () => (
       <LinkButton
         className={styles.viewButton}
         external={true}
-        link="/Gerard Burns CV.pdf"
+        link="/gerard-burns-cv.pdf"
       >
         View CV
       </LinkButton>
@@ -27,7 +27,7 @@ const Resume = () => (
       <LinkButton
         className={styles.downloadButton}
         external={true}
-        link="/Gerard Burns CV.pdf"
+        link="/gerard-burns-cv.pdf"
         download={true}
       >
         Download CV

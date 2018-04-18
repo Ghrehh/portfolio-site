@@ -16,7 +16,7 @@ exports[`Resume renders the component correctly 1`] = `
     <LinkButton
       className="viewButton"
       external={true}
-      link="/Gerard Burns CV.pdf"
+      link="/gerard-burns-cv.pdf"
     >
       View CV
     </LinkButton>
@@ -24,7 +24,7 @@ exports[`Resume renders the component correctly 1`] = `
       className="downloadButton"
       download={true}
       external={true}
-      link="/Gerard Burns CV.pdf"
+      link="/gerard-burns-cv.pdf"
     >
       Download CV
     </LinkButton>
