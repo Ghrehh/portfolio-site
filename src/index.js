@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import 'reset-css';
-import './index.module.css';
+import './index.css';
 import Routes from './Routes';
 import serviceWorker from './registerServiceWorker';
 
