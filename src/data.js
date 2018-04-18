@@ -36,7 +36,7 @@ export default {
       name: 'VUE WORLD MAP',
       description:
         'A Vue.js library for displaying heat map style data per country on a world map.',
-      backgroundColor: 'var(--blue)',
+      backgroundColor: 'var(--light-blue)',
       gitHubLink: 'https://github.com/Ghrehh/vue-world-map'
     },
     'portfolio-website': {
