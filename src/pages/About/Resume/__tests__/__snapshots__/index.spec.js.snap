@@ -10,24 +10,12 @@ exports[`Resume renders the component correctly 1`] = `
   >
     Please view my CV for a detailed description of my past and current work.
   </p>
-  <ButtonContainer
-    className="buttonContainer"
+  <LinkButton
+    className="button"
+    external={true}
+    link="/gerard-burns-cv.pdf"
   >
-    <LinkButton
-      className="viewButton"
-      external={true}
-      link="/gerard-burns-cv.pdf"
-    >
-      View CV
-    </LinkButton>
-    <LinkButton
-      className="downloadButton"
-      download={true}
-      external={true}
-      link="/gerard-burns-cv.pdf"
-    >
-      Download CV
-    </LinkButton>
-  </ButtonContainer>
+    View CV
+  </LinkButton>
 </Card>
 `;

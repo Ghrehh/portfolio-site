@@ -15,18 +15,9 @@
   text-align: center;
 }
 
-.buttonContainer {
-  text-align: center;
-}
-
-.viewButton {
+.button {
   width: 150px;
   background-color: var(--green);
-}
-
-.downloadButton {
-  width: 150px;
-  background-color: var(--purple);
 }
 
 @media (max-width: 680px) {

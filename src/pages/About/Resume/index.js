@@ -3,7 +3,6 @@ import React from 'react';
 
 import Card from 'components/Card';
 import SectionHeading from 'components/text/SectionHeading';
-import ButtonContainer from 'components/buttons/Container';
 import LinkButton from 'components/buttons/Link';
 import styles from './styles.module.css';
 
@@ -15,24 +14,13 @@ const Resume = () => (
       Please view my CV for a detailed description of my past and current work.
     </p>
 
-    <ButtonContainer className={styles.buttonContainer}>
-      <LinkButton
-        className={styles.viewButton}
-        external={true}
-        link="/gerard-burns-cv.pdf"
-      >
-        View CV
-      </LinkButton>
-
-      <LinkButton
-        className={styles.downloadButton}
-        external={true}
-        link="/gerard-burns-cv.pdf"
-        download={true}
-      >
-        Download CV
-      </LinkButton>
-    </ButtonContainer>
+    <LinkButton
+      className={styles.button}
+      external={true}
+      link="/gerard-burns-cv.pdf"
+    >
+      View CV
+    </LinkButton>
   </Card>
 );
 
