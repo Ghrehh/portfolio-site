@@ -9,14 +9,12 @@ type Props = {
   children: React.Node,
   link?: string,
   external?: boolean,
-  className?: string,
-  download?: boolean
+  className?: string
 };
 
 const LinkButton = (props: Props) => (
   <UnstyledLink
     link={props.link}
-    download={props.download}
     external={props.external}
     className={combineClass(styles.button, props.className)}
   >

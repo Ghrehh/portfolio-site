@@ -5,7 +5,6 @@ exports[`Project renders the component correctly 1`] = `
   className="projectOuter"
 >
   <UnstyledLink
-    download={false}
     external={false}
     link="/projects/undefined"
   >
