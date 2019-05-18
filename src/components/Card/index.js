@@ -5,14 +5,16 @@ import styles from './styles.module.css';
 
 type Props = {
   children: React.Node,
-  className?: string
+  className?: string,
+  style?: Object
 };
 
 const Card = (props: Props) => (
-  <section className={styles.card}>
-    <div className={combineClass(styles.cardInner, props.className)}>
-      {props.children}
-    </div>
+  <section
+    className={combineClass(styles.card, props.className)}
+    style={props.style}
+  >
+    {props.children}
   </section>
 );
 

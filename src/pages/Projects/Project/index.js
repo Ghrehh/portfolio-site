@@ -4,7 +4,8 @@ import React from 'react';
 import * as projectModel from 'models/data/project';
 import * as pathConstants from 'constants/paths';
 import SectionHeading from 'components/text/SectionHeading';
-import UnstyledLink from 'components/UnstyledLink';
+import Card from 'components/Card';
+import LinkButton from 'components/buttons/Link';
 
 import styles from './styles.module.css';
 
@@ -14,22 +15,23 @@ type Props = {
 };
 
 const Project = (props: Props) => (
-  <div className={styles.projectOuter}>
-    <UnstyledLink link={`${pathConstants.PROJECTS}/${props.path}`}>
-      <section
-        style={{ backgroundColor: props.project.backgroundColor }}
-        className={styles.project}
-      >
-        <div className={styles.projectInner}>
-          <SectionHeading className={styles.projectName}>
-            {props.project.name}
-          </SectionHeading>
+  <Card
+    style={{ backgroundColor: props.project.backgroundColor }}
+    className={styles.project}
+  >
+    <SectionHeading className={styles.projectName}>
+      {props.project.name}
+    </SectionHeading>
 
-          <p className={styles.projectBody}>{props.project.description}</p>
-        </div>
-      </section>
-    </UnstyledLink>
-  </div>
+    <p className={styles.projectBody}>{props.project.description}</p>
+
+    <LinkButton
+      className={styles.button}
+      link={`${pathConstants.PROJECTS}/${props.path}`}
+    >
+      More Info
+    </LinkButton>
+  </Card>
 );
 
 export default Project;

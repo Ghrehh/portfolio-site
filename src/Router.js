@@ -1,7 +1,6 @@
 // @flow
 import * as React from 'react';
-import { Route } from 'react-router-dom';
-import { MemoryRouter } from 'react-router';
+import { Route, BrowserRouter } from 'react-router-dom';
 
 import data from './data';
 import * as projectRouterParams from 'models/project-router-params';
@@ -18,7 +17,7 @@ class Router extends React.Component<{}> {
   );
 
   render = () => (
-    <MemoryRouter>
+    <BrowserRouter>
       <React.Fragment>
         <Route exact path={pathConstants.ABOUT} component={About} />
         <Route
@@ -32,7 +31,7 @@ class Router extends React.Component<{}> {
           render={this.renderProject}
         />
       </React.Fragment>
-    </MemoryRouter>
+    </BrowserRouter>
   );
 }
 

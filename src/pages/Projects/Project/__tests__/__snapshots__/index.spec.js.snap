@@ -1,36 +1,29 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Project renders the component correctly 1`] = `
-<div
-  className="projectOuter"
+<Card
+  className="project"
+  style={
+    Object {
+      "backgroundColor": "red",
+    }
+  }
 >
-  <UnstyledLink
-    external={false}
+  <SectionHeading
+    className="projectName"
+  >
+    foo
+  </SectionHeading>
+  <p
+    className="projectBody"
+  >
+    bar
+  </p>
+  <LinkButton
+    className="button"
     link="/projects/undefined"
   >
-    <section
-      className="project"
-      style={
-        Object {
-          "backgroundColor": "red",
-        }
-      }
-    >
-      <div
-        className="projectInner"
-      >
-        <SectionHeading
-          className="projectName"
-        >
-          foo
-        </SectionHeading>
-        <p
-          className="projectBody"
-        >
-          bar
-        </p>
-      </div>
-    </section>
-  </UnstyledLink>
-</div>
+    More Info
+  </LinkButton>
+</Card>
 `;

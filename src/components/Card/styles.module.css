@@ -1,18 +1,15 @@
 .card {
-  margin: 80px 20px 50px;
-}
-
-.cardInner {
-  max-width: 500px;
-  margin: auto;
+  max-width: 580px;
   padding: 40px;
   border: 1px solid var(--grey);
   border-radius: 3px;
   background-color: white;
   text-align: center;
+  margin: 80px auto 50px;
+  box-sizing: border-box
 }
 
-@media (max-width: 680px) {
+@media (max-width: 620px) {
   .card {
     margin: 40px 20px 20px;
   }

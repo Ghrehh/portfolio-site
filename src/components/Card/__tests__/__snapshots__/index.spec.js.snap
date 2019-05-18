@@ -2,17 +2,14 @@
 
 exports[`Card renders the component correctly 1`] = `
 <section
-  className="card"
+  className="card foo"
+  style={undefined}
 >
-  <div
-    className="cardInner foo"
-  >
-    <p>
-      Foo
-    </p>
-    <p>
-      bar
-    </p>
-  </div>
+  <p>
+    Foo
+  </p>
+  <p>
+    bar
+  </p>
 </section>
 `;

@@ -10,7 +10,7 @@ import PageHeading from 'components/text/PageHeading';
 import SectionHeading from 'components/text/SectionHeading';
 
 import 'reset-css';
-import 'index.module.css';
+import 'index.css';
 
 const ipsum = (
   <p>

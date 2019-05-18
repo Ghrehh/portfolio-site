@@ -1,58 +1,44 @@
-.projectOuter {
-  margin: 40px 20px 20px;
-}
-
-.link {
-  text-decoration: none;
-}
-
 .project {
   max-width: 500px;
-  margin: auto;
-  padding: 10px;
-  border-radius: 3px;
   background-color: white;
   text-align: center;
-  box-shadow: var(--box-shadow);
   transition: transform 0.5s, filter 0.5s;
+  padding: 40px;
+  box-shadow: var(--box-shadow);
+  border: none;
+  margin: 40px auto;
 }
 
-.project:hover {
-  cursor: pointer;
-  transform: translate(0, -4px);
-  filter: brightness(1.1);
-}
-
-.projectInner {
-  border: 1px solid #ffffff59;
-  padding: 30px;
+@media (max-width: 620px) {
+  .project {
+    margin: 20px;
+  }
 }
 
 .projectName {
   color: white;
-  margin-bottom: 9px;
 }
 
 .projectBody {
-  margin: 0;
   color: white;
+  margin-bottom: 28px;
+}
+
+.button {
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 4px;
+  text-align: center;
+  width: 145px;
+  padding: 10px;
+  transition: transform 0.5s, background-color 0.3s, color 0.3s;
+}
+
+.button:hover {
+  filter: none;
+  background-color: white;
+  color: var(--charcoal);
 }
 
 @media (max-width: 520px) {
-  .projectOuter {
-    margin: 0;
-  }
-
-  .project:hover {
-    transform: initial;
-  }
-
-  .project {
-    box-shadow: none;
-    border-radius: 0;
-  }
-
-  .projectInner {
-    border: none;
-  }
 }
