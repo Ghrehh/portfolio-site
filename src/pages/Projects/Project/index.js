@@ -6,7 +6,7 @@ import * as pathConstants from 'constants/paths';
 import SectionHeading from 'components/text/SectionHeading';
 import Card from 'components/Card';
 import LinkButton from 'components/buttons/Link';
-import Tags from './Tags';
+import Tags from 'components/Tags';
 
 import styles from './styles.module.css';
 

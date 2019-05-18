@@ -15,3 +15,7 @@
   display: inline-block;
   margin-right: 10px;
 }
+
+.tag:last-child {
+  margin-right: 0;
+}

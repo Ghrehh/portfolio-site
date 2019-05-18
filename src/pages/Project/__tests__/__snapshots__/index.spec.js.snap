@@ -34,6 +34,10 @@ exports[`Project renders the component correctly 1`] = `
         GitHub
       </LinkButton>
     </ButtonContainer>
+    <Tags
+      className="tags"
+      tags={undefined}
+    />
   </section>
 </Modal>
 `;

@@ -7,6 +7,7 @@ import * as routerHistoryModel from 'models/router-history';
 import SectionHeading from 'components/text/SectionHeading';
 import LinkButton from 'components/buttons/Link';
 import ButtonContainer from 'components/buttons/Container';
+import Tags from 'components/Tags';
 import Modal from './Modal';
 
 import styles from './styles.module.css';
@@ -50,6 +51,8 @@ class Project extends React.Component<Props> {
             </LinkButton>
             {this.renderWebsiteButton()}
           </ButtonContainer>
+
+          <Tags className={styles.tags} tags={this.project.tags} />
         </section>
       </Modal>
     );

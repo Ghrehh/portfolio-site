@@ -15,4 +15,9 @@
 
 .linkButtonContainer {
   text-align: center;
+  margin-bottom: 40px;
+}
+
+.tags {
+  justify-content: center;
 }
