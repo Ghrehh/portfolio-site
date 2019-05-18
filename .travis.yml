@@ -1,6 +1,6 @@
 language: node_js
 node_js: "7"
-install: npm i
+install: yarn
 script: 
  - yarn run test
  - yarn run lint
