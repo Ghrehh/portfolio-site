@@ -3,7 +3,6 @@ import * as React from 'react';
 
 import Page from 'components/Page';
 import PageHeading from 'components/text/PageHeading';
-import UnstyledLink from 'components/UnstyledLink';
 import SlideUp from 'components/animation/SlideUp';
 
 import styles from './styles.module.css';
@@ -24,9 +23,9 @@ const Modal = (props: Props) => (
     <SlideUp>
       <div>
         <div className={styles.closeButtonContainer}>
-          <UnstyledLink onClick={props.onClose}>
-            <span className={styles.closeButton}>×</span>
-          </UnstyledLink>
+          <span onClick={props.onClose} className={styles.closeButton}>
+            ×
+          </span>
         </div>
 
         <PageHeading className={styles.title}>{props.heading}</PageHeading>
