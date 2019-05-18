@@ -36,6 +36,9 @@ exports[`Projects renders the component correctly 1`] = `
           "description": "Client used to display data from the Tweetatlas Server, built using Vue JS.",
           "gitHubLink": "https://github.com/Ghrehh/tweetatlas-client",
           "name": "TWEETATLAS CLIENT",
+          "tags": Array [
+            "Vue",
+          ],
         }
       }
     />
@@ -47,6 +50,9 @@ exports[`Projects renders the component correctly 1`] = `
           "description": "Service used to estimate the location of users creating tweets containing a search phrase or phrases. Built using Go.",
           "gitHubLink": "https://github.com/Ghrehh/tweetatlas-server",
           "name": "TWEETATLAS SERVER",
+          "tags": Array [
+            "Go",
+          ],
         }
       }
     />
@@ -58,6 +64,10 @@ exports[`Projects renders the component correctly 1`] = `
           "description": "A sleek web metronome capable of playing in non-standard time signatures. Built using Vue JS",
           "gitHubLink": "https://github.com/Ghrehh/nsts-metronome",
           "name": "NSTS METRONOME",
+          "tags": Array [
+            "Vue",
+            "Music",
+          ],
           "websiteLink": "https://nsts-metronome.github.io/",
         }
       }
@@ -70,6 +80,9 @@ exports[`Projects renders the component correctly 1`] = `
           "description": "A web app for musicians to train their aural perception skills.",
           "gitHubLink": "https://github.com/Ghrehh/ear-training",
           "name": "EAR TRAINING",
+          "tags": Array [
+            "Music",
+          ],
           "websiteLink": "https://ghrehh.github.io/eartraining/",
         }
       }
@@ -82,6 +95,9 @@ exports[`Projects renders the component correctly 1`] = `
           "description": "A Vue.js library for displaying heat map style data per country on a world map.",
           "gitHubLink": "https://github.com/Ghrehh/vue-world-map",
           "name": "VUE WORLD MAP",
+          "tags": Array [
+            "Package",
+          ],
         }
       }
     />
@@ -93,6 +109,10 @@ exports[`Projects renders the component correctly 1`] = `
           "description": "The website you're currently viewing. Built using Create React App.",
           "gitHubLink": "https://github.com/Ghrehh/portfolio-site",
           "name": "PORTFOLIO WEBSITE",
+          "tags": Array [
+            "React",
+            "Flow",
+          ],
         }
       }
     />

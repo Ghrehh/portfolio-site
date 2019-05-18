@@ -3,7 +3,7 @@
   background-color: white;
   text-align: center;
   transition: transform 0.5s, filter 0.5s;
-  padding: 40px;
+  padding: 40px 40px 20px;
   box-shadow: var(--box-shadow);
   border: none;
   margin: 40px auto;
@@ -32,6 +32,7 @@
   width: 145px;
   padding: 10px;
   transition: transform 0.5s, background-color 0.3s, color 0.3s;
+  margin-bottom: 28px;
 }
 
 .button:hover {

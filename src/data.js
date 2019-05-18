@@ -5,14 +5,16 @@ export const projects = {
     description:
       'Client used to display data from the Tweetatlas Server, built using Vue JS.',
     backgroundColor: 'var(--green)',
-    gitHubLink: 'https://github.com/Ghrehh/tweetatlas-client'
+    gitHubLink: 'https://github.com/Ghrehh/tweetatlas-client',
+    tags: ['Vue']
   },
   'tweetatlas-server': {
     name: 'TWEETATLAS SERVER',
     description:
       'Service used to estimate the location of users creating tweets containing a search phrase or phrases. Built using Go.',
     backgroundColor: 'var(--yellow)',
-    gitHubLink: 'https://github.com/Ghrehh/tweetatlas-server'
+    gitHubLink: 'https://github.com/Ghrehh/tweetatlas-server',
+    tags: ['Go']
   },
   'nsts-metronome': {
     name: 'NSTS METRONOME',
@@ -20,7 +22,8 @@ export const projects = {
       'A sleek web metronome capable of playing in non-standard time signatures. Built using Vue JS',
     backgroundColor: 'var(--purple)',
     gitHubLink: 'https://github.com/Ghrehh/nsts-metronome',
-    websiteLink: 'https://nsts-metronome.github.io/'
+    websiteLink: 'https://nsts-metronome.github.io/',
+    tags: ['Vue', 'Music']
   },
   'ear-training': {
     name: 'EAR TRAINING',
@@ -28,21 +31,24 @@ export const projects = {
       'A web app for musicians to train their aural perception skills.',
     backgroundColor: 'var(--red)',
     gitHubLink: 'https://github.com/Ghrehh/ear-training',
-    websiteLink: 'https://ghrehh.github.io/eartraining/'
+    websiteLink: 'https://ghrehh.github.io/eartraining/',
+    tags: ['Music']
   },
   'vue-world-map': {
     name: 'VUE WORLD MAP',
     description:
       'A Vue.js library for displaying heat map style data per country on a world map.',
     backgroundColor: 'var(--light-blue)',
-    gitHubLink: 'https://github.com/Ghrehh/vue-world-map'
+    gitHubLink: 'https://github.com/Ghrehh/vue-world-map',
+    tags: ['Package']
   },
   'portfolio-website': {
     name: 'PORTFOLIO WEBSITE',
     description:
       "The website you're currently viewing. Built using Create React App.",
     backgroundColor: 'var(--green)',
-    gitHubLink: 'https://github.com/Ghrehh/portfolio-site'
+    gitHubLink: 'https://github.com/Ghrehh/portfolio-site',
+    tags: ['React', 'Flow']
   }
 };
 

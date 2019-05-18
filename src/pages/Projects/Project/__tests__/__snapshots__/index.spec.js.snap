@@ -25,5 +25,8 @@ exports[`Project renders the component correctly 1`] = `
   >
     More Info
   </LinkButton>
+  <Tags
+    tags={undefined}
+  />
 </Card>
 `;

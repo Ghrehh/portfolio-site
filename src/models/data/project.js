@@ -4,5 +4,6 @@ export type Type = {
   description: string,
   backgroundColor: string,
   gitHubLink: string,
-  websiteLink?: string
+  websiteLink?: string,
+  tags: string[]
 };

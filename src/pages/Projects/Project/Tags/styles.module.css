@@ -1,0 +1,17 @@
+.tags {
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  margin-right: 10px;
+}
+
+.tag {
+  border-radius: 15px;
+  padding: 7px 10px 9px;
+  background-color: #32313121;
+  color: var(--charcoal);
+  display: inline-block;
+  margin-right: 10px;
+}
