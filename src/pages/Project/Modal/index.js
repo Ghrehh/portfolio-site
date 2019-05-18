@@ -1,7 +1,6 @@
 // @flow
 import * as React from 'react';
 
-import * as pathConstants from 'constants/paths';
 import Page from 'components/Page';
 import PageHeading from 'components/text/PageHeading';
 import UnstyledLink from 'components/UnstyledLink';
@@ -12,7 +11,8 @@ import styles from './styles.module.css';
 type Props = {
   backgroundColor: string,
   heading: string,
-  children: React.Node
+  children: React.Node,
+  onClose: Function
 };
 
 const Modal = (props: Props) => (
@@ -24,7 +24,7 @@ const Modal = (props: Props) => (
     <SlideUp>
       <div>
         <div className={styles.closeButtonContainer}>
-          <UnstyledLink link={pathConstants.PROJECTS}>
+          <UnstyledLink onClick={props.onClose}>
             <span className={styles.closeButton}>×</span>
           </UnstyledLink>
         </div>

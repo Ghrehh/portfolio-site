@@ -9,7 +9,8 @@ type Props = {
   children: React.Node,
   link: string,
   external: boolean,
-  className?: string
+  className?: string,
+  onClick?: Function
 };
 
 const UnstyledLink = (props: Props) => {
@@ -24,7 +25,7 @@ const UnstyledLink = (props: Props) => {
   }
 
   return (
-    <Link to={props.link} className={className}>
+    <Link onClick={props.onClick} to={props.link} className={className}>
       {props.children}
     </Link>
   );

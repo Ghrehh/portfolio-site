@@ -1,7 +1,7 @@
 // @flow
 import React from 'react';
 
-import * as projectsModel from 'models/data/projects';
+import { projects } from 'data';
 import * as pathConstants from 'constants/paths';
 import Page from 'components/Page';
 import PageHeading from 'components/text/PageHeading';
@@ -11,10 +11,10 @@ import Project from './Project';
 
 import styles from './styles.module.css';
 
-class Projects extends React.Component<{ projects: projectsModel.Type }> {
+class Projects extends React.Component<{}> {
   renderProjects() {
-    return Object.keys(this.props.projects).map(key => (
-      <Project project={this.props.projects[key]} key={key} path={key} />
+    return Object.keys(projects).map(key => (
+      <Project project={projects[key]} key={key} path={key} />
     ));
   }
 

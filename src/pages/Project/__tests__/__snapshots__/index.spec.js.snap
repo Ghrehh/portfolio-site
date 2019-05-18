@@ -4,6 +4,7 @@ exports[`Project renders the component correctly 1`] = `
 <Modal
   backgroundColor="red"
   heading="foo"
+  onClose={[Function]}
 >
   <section
     className="description"
