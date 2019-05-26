@@ -40,7 +40,7 @@ exports[`Projects renders the component correctly 1`] = `
           "tags": Array [
             "Vue",
             "Music",
-            "CSS animation",
+            "CSS Animation",
           ],
           "websiteLink": "https://nsts-metronome.github.io/",
         }
@@ -78,10 +78,60 @@ exports[`Projects renders the component correctly 1`] = `
       }
     />
     <Project
-      path="tweetatlas-client"
+      path="portfolio-website"
       project={
         Object {
           "backgroundColor": "var(--yellow)",
+          "description": "The website you're currently viewing. Built using Create React App.",
+          "gitHubLink": "https://github.com/Ghrehh/portfolio-site",
+          "name": "PORTFOLIO WEBSITE",
+          "slug": "portfolio-website",
+          "tags": Array [
+            "React",
+            "Flow",
+          ],
+        }
+      }
+    />
+    <Project
+      path="findlocation"
+      project={
+        Object {
+          "backgroundColor": "var(--purple)",
+          "description": "A Go package for parsing locations from a string. Used on the Tweetatlas Backend",
+          "gitHubLink": "https://github.com/Ghrehh/findlocation",
+          "name": "FINDLOCATION",
+          "slug": "findlocation",
+          "tags": Array [
+            "Go",
+            "Package",
+          ],
+        }
+      }
+    />
+    <Project
+      path="notation-js"
+      project={
+        Object {
+          "backgroundColor": "var(--green)",
+          "description": "JS library for displaying sheet music.",
+          "gitHubLink": "https://github.com/Ghrehh/Notation.js",
+          "name": "NOTATION JS",
+          "slug": "notation-js",
+          "tags": Array [
+            "Javascript",
+            "Package",
+            "Music",
+          ],
+          "websiteLink": "https://ghrehh.github.io/Notation.js/",
+        }
+      }
+    />
+    <Project
+      path="tweetatlas-client"
+      project={
+        Object {
+          "backgroundColor": "var(--red)",
           "description": "Client used to display data from the Tweetatlas Server, built using Vue JS.",
           "gitHubLink": "https://github.com/Ghrehh/tweetatlas-client",
           "name": "TWEETATLAS CLIENT",
@@ -98,7 +148,7 @@ exports[`Projects renders the component correctly 1`] = `
       path="tweetatlas-server"
       project={
         Object {
-          "backgroundColor": "var(--purple)",
+          "backgroundColor": "var(--light-blue)",
           "description": "Service used to estimate the location of users creating tweets containing a search phrase or phrases. Built using Go.",
           "gitHubLink": "https://github.com/Ghrehh/tweetatlas-server",
           "name": "TWEETATLAS SERVER",
@@ -111,18 +161,89 @@ exports[`Projects renders the component correctly 1`] = `
       }
     />
     <Project
-      path="portfolio-website"
+      path="myp-boost"
+      project={
+        Object {
+          "backgroundColor": "var(--yellow)",
+          "description": "Website commissioned by a life coach to help gather relevant information from his clients. Design by Brian Burns.",
+          "gitHubLink": "https://github.com/Ghrehh/mypboost",
+          "name": "MYP BOOST",
+          "slug": "myp-boost",
+          "tags": Array [
+            "React",
+            "Redux",
+            "Commission",
+          ],
+          "websiteLink": "https://mypboost.github.io/",
+        }
+      }
+    />
+    <Project
+      path="burns-bros"
+      project={
+        Object {
+          "backgroundColor": "var(--purple)",
+          "description": "A website me and my brother put together for our freelance work; we never quite got around to finishing it,
+            but a lot of work went into it regardless.
+            Design by Brian Burns.",
+          "gitHubLink": "https://github.com/Ghrehh/burnsbros",
+          "name": "BURNS BROS & CO",
+          "slug": "burns-bros",
+          "tags": Array [
+            "HTML Templating",
+            "CSS Animation",
+          ],
+          "websiteLink": "https://ghrehh.github.io/burnsbros/build/",
+        }
+      }
+    />
+    <Project
+      path="newington-fc"
       project={
         Object {
           "backgroundColor": "var(--green)",
-          "description": "The website you're currently viewing. Built using Create React App.",
-          "gitHubLink": "https://github.com/Ghrehh/portfolio-site",
-          "name": "PORTFOLIO WEBSITE",
-          "slug": "portfolio-website",
+          "description": "Unfinished website for Newington Football Club. Design by Brian Burns",
+          "gitHubLink": "https://github.com/Ghrehh/newington",
+          "name": "NEWINGTON FC",
+          "slug": "newington-fc",
           "tags": Array [
-            "React",
-            "Flow",
+            "HTML Templating",
           ],
+          "websiteLink": "https://ghrehh.github.io/newington/build/",
+        }
+      }
+    />
+    <Project
+      path="mactire"
+      project={
+        Object {
+          "backgroundColor": "var(--red)",
+          "description": "Commissioned website for singer-songwriter MacTire. Note that fonts on this have expired so parts look a little funky.",
+          "gitHubLink": "https://github.com/Ghrehh/mactire",
+          "name": "MACTIRE",
+          "slug": "mactire",
+          "tags": Array [
+            "HTML Templating",
+            "Commission",
+          ],
+          "websiteLink": "https://mactiremusic.github.io/",
+        }
+      }
+    />
+    <Project
+      path="unmute-records"
+      project={
+        Object {
+          "backgroundColor": "var(--light-blue)",
+          "description": "Commissioned website for now defunct label Unmute Records.",
+          "gitHubLink": "https://github.com/Ghrehh/unmuterecords",
+          "name": "UNMUTE RECORDS",
+          "slug": "unmute-records",
+          "tags": Array [
+            "HTML Templating",
+            "Commission",
+          ],
+          "websiteLink": "https://unmuterecords.github.io/",
         }
       }
     />

@@ -46,7 +46,7 @@ exports[`Project renders the component correctly 1`] = `
         Array [
           "Vue",
           "Music",
-          "CSS animation",
+          "CSS Animation",
         ]
       }
     />
