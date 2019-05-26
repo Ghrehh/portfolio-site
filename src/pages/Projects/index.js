@@ -13,8 +13,8 @@ import styles from './styles.module.css';
 
 class Projects extends React.Component<{}> {
   renderProjects() {
-    return Object.keys(projects).map(key => (
-      <Project project={projects[key]} key={key} path={key} />
+    return projects.map(project => (
+      <Project project={project} key={project.slug} path={project.slug} />
     ));
   }
 

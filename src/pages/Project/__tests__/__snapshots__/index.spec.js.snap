@@ -2,8 +2,8 @@
 
 exports[`Project renders the component correctly 1`] = `
 <Modal
-  backgroundColor="red"
-  heading="foo"
+  backgroundColor="var(--green)"
+  heading="NSTS METRONOME"
   onClose={[Function]}
 >
   <section
@@ -15,7 +15,7 @@ exports[`Project renders the component correctly 1`] = `
     <p
       className="body"
     >
-      bar
+      A sleek web metronome capable of playing in non-standard time signatures. Built using Vue JS
     </p>
   </section>
   <section
@@ -29,14 +29,26 @@ exports[`Project renders the component correctly 1`] = `
     >
       <LinkButton
         external={true}
-        link={undefined}
+        link="https://github.com/Ghrehh/nsts-metronome"
       >
         GitHub
+      </LinkButton>
+      <LinkButton
+        external={true}
+        link="https://nsts-metronome.github.io/"
+      >
+        Website
       </LinkButton>
     </ButtonContainer>
     <Tags
       className="tags"
-      tags={undefined}
+      tags={
+        Array [
+          "Vue",
+          "Music",
+          "CSS animation",
+        ]
+      }
     />
   </section>
 </Modal>

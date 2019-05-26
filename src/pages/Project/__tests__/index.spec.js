@@ -3,16 +3,6 @@ import ShallowRenderer from 'react-test-renderer/shallow';
 
 import Project from '../';
 
-jest.mock('data', () => ({
-  projects: {
-    'cool-project': {
-      name: 'foo',
-      description: 'bar',
-      backgroundColor: 'red'
-    }
-  }
-}));
-
 describe('Project', () => {
   let testContext = {};
 
@@ -20,7 +10,7 @@ describe('Project', () => {
     testContext = {};
 
     const component = (
-      <Project match={{ params: { project: 'cool-project' } }} />
+      <Project match={{ params: { project: 'nsts-metronome' } }} />
     );
 
     testContext.renderer = new ShallowRenderer();

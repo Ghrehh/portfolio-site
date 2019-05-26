@@ -1,7 +1,7 @@
 // @flow
 import React from 'react';
 
-import { projects } from 'data';
+import { projectFor } from 'data';
 import * as routerMatchModel from 'models/router-match';
 import * as routerHistoryModel from 'models/router-history';
 import SectionHeading from 'components/text/SectionHeading';
@@ -18,7 +18,7 @@ type Props = {
 };
 
 class Project extends React.Component<Props> {
-  project = projects[this.props.match.params.project];
+  project = projectFor(this.props.match.params.project);
 
   renderWebsiteButton() {
     if (this.project.websiteLink === undefined) return null;
