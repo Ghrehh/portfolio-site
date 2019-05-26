@@ -1,6 +1,7 @@
 .tags {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .title {
@@ -10,10 +11,11 @@
 .tag {
   border-radius: 15px;
   padding: 7px 10px 9px;
-  background-color: #32313121;
-  color: var(--charcoal);
+  background-color: #00000012;
+  color: #f3f3f391;
   display: inline-block;
   margin-right: 10px;
+
 }
 
 .tag:last-child {

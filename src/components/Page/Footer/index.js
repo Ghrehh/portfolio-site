@@ -19,14 +19,6 @@ const Footer = () => (
 
         <div>
           <LinkButton
-            className={styles.twitterButton}
-            link="https://twitter.com/ghrehh"
-            external={true}
-          >
-            Twitter
-          </LinkButton>
-
-          <LinkButton
             className={styles.emailButton}
             link="mailto:ghrehh@gmail.com"
             external={true}

@@ -27,13 +27,6 @@ exports[`Footer renders the component correctly 1`] = `
       </div>
       <div>
         <LinkButton
-          className="twitterButton"
-          external={true}
-          link="https://twitter.com/ghrehh"
-        >
-          Twitter
-        </LinkButton>
-        <LinkButton
           className="emailButton"
           external={true}
           link="mailto:ghrehh@gmail.com"
