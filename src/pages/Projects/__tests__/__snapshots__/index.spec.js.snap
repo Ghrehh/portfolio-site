@@ -29,44 +29,17 @@ exports[`Projects renders the component correctly 1`] = `
       </LinkButton>
     </div>
     <Project
-      path="tweetatlas-client"
-      project={
-        Object {
-          "backgroundColor": "var(--green)",
-          "description": "Client used to display data from the Tweetatlas Server, built using Vue JS.",
-          "gitHubLink": "https://github.com/Ghrehh/tweetatlas-client",
-          "name": "TWEETATLAS CLIENT",
-          "tags": Array [
-            "Vue",
-          ],
-        }
-      }
-    />
-    <Project
-      path="tweetatlas-server"
-      project={
-        Object {
-          "backgroundColor": "var(--yellow)",
-          "description": "Service used to estimate the location of users creating tweets containing a search phrase or phrases. Built using Go.",
-          "gitHubLink": "https://github.com/Ghrehh/tweetatlas-server",
-          "name": "TWEETATLAS SERVER",
-          "tags": Array [
-            "Go",
-          ],
-        }
-      }
-    />
-    <Project
       path="nsts-metronome"
       project={
         Object {
-          "backgroundColor": "var(--purple)",
+          "backgroundColor": "var(--green)",
           "description": "A sleek web metronome capable of playing in non-standard time signatures. Built using Vue JS",
           "gitHubLink": "https://github.com/Ghrehh/nsts-metronome",
           "name": "NSTS METRONOME",
           "tags": Array [
             "Vue",
             "Music",
+            "CSS animation",
           ],
           "websiteLink": "https://nsts-metronome.github.io/",
         }
@@ -97,6 +70,37 @@ exports[`Projects renders the component correctly 1`] = `
           "name": "VUE WORLD MAP",
           "tags": Array [
             "Package",
+          ],
+        }
+      }
+    />
+    <Project
+      path="tweetatlas-client"
+      project={
+        Object {
+          "backgroundColor": "var(--yellow)",
+          "description": "Client used to display data from the Tweetatlas Server, built using Vue JS.",
+          "gitHubLink": "https://github.com/Ghrehh/tweetatlas-client",
+          "name": "TWEETATLAS CLIENT",
+          "tags": Array [
+            "Vue",
+            "WebSockets",
+          ],
+          "websiteLink": "https://tweetatlas.github.io/",
+        }
+      }
+    />
+    <Project
+      path="tweetatlas-server"
+      project={
+        Object {
+          "backgroundColor": "var(--purple)",
+          "description": "Service used to estimate the location of users creating tweets containing a search phrase or phrases. Built using Go.",
+          "gitHubLink": "https://github.com/Ghrehh/tweetatlas-server",
+          "name": "TWEETATLAS SERVER",
+          "tags": Array [
+            "Go",
+            "WebSockets",
           ],
         }
       }

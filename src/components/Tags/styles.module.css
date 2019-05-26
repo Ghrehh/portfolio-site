@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .title {
@@ -14,10 +15,5 @@
   background-color: #00000012;
   color: #f3f3f391;
   display: inline-block;
-  margin-right: 10px;
-
-}
-
-.tag:last-child {
-  margin-right: 0;
+  margin: 5px 5px 0;
 }
